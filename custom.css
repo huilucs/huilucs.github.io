@@ -1,152 +1,131 @@
+/* General body styling */
 body {
-  background-position: center center;
-  color: black;
-  background-color: rgba(255,255,255,0.99); 
+  background-color: rgba(255, 255, 255, 0.99);
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
   background-repeat: no-repeat;
-  font-family: 'Open sans', sans-serif;
-  resize: no;
+  background-position: center center;
 }
 
+/* Table layout (if still used) */
 table {
   table-layout: fixed;
 }
 
-img { border: none; }
+/* Image styling */
+img {
+  border: none;
+}
 
 .image_carousel img {
   margin-right: 14px;
   display: block;
   float: left;
   box-shadow: 3px 3px 1px #ccc;
-  -webkit-box-shadow: 3px 3px 1px #ccc;
-  -moz-box-shadow: 3px 3px 1px #ccc;
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
 }
 
+/* Optional: thumbnail variant */
 .image_thumb {
   margin-right: 14px;
   display: block;
   float: left;
   box-shadow: 3px 3px 1px #ccc;
-  -webkit-box-shadow: 3px 3px 1px #ccc;
-  -moz-box-shadow: 3px 3px 1px #ccc;
 }
 
-.icon {
-    background: 'images/zoom.png';
-    height: 20px;
-    width: 20px;
-    display: block;
-    /* Other styles here */
-}
-
+/* Student image if needed */
 .image_student {
-  border-radius: 0;
-  color: rgba(0,0,0,0.99);
   margin-right: 65px;
   float: left;
+  border-radius: 0;
+  color: rgba(0, 0, 0, 0.99);
 }
 
-
+/* Navbar */
 .navbar {
   width: 100%;
-  background-color: black;
-  /*box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);*/
+  background-color: #000;
 }
 
-hr {
-  border-color: gray;
-}
-
+/* Links in nav */
 .nav-link {
   color: white !important;
 }
 
-.nav-link:hover {
-  color: lightgray !important;
-}
-
+.nav-link:hover,
 .navbar-brand:hover {
   color: lightgray !important;
 }
 
+/* Rainbow text hover */
 .rainbow-text:hover {
   background-image: linear-gradient(to left, violet, #7600FB, #00E3FB, #05C933, yellow, orange, red);
   -webkit-background-clip: text;
-  -webkit-background-color: transparent !important;
-  color: transparent !important;
-  -webkit-text-fill-color: linear-gradient(to left, violet, #7600FB, #00E3FB, #05C933, yellow, orange, red);
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
-.subwrap{
-  vertical-align: middle;
-}
-
+/* Wrapper classes */
+.subwrap,
 .black-box {
-  border-radius: 0;
-  color: rgba(0,0,0,0.99);
+  color: rgba(0, 0, 0, 0.99);
   padding: 3px;
   float: left;
 }
 
-.hl-welcome {
+/* Responsive blocks (modern layout encourages flex/grid over floats) */
+.hl-welcome,
+.hl-pub,
+.hl-teach,
+.hl-student,
+.hl-research {
   min-width: 500px;
-  width: 61.8%;
-  padding: 0px;
-}
-
-.hl-pub{
-  min-width: 500px;
-  width: 61.8%;
   padding: 3px;
 }
 
-.hl-teach {
-  min-width: 500px;
-  width: 35%;
-  padding: 3px;
+/* Custom widths */
+.hl-welcome { width: 61.8%; }
+.hl-pub { width: 61.8%; }
+.hl-teach { width: 35%; }
+.hl-student { width: 25%; }
+.hl-research { width: 48.2%; }
+
+/* Description block styling */
+.description {
+  background-color: #f8f9fa;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.hl-student {
-  min-width: 500px;
-  width: 25%;
-  padding: 3px;
+.description a {
+  color: blue;
 }
 
+/* Publication thumbnail (if used) */
 .dark-wrapper .pub-item .pub-thumbnail {
-    border-color: #4b4b4b;
+  border-color: #4b4b4b;
 }
 
 .pub-item.with-icon .elem-wrapper i {
-    background-color: #fff;
-    color: #bbb;
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    border: 1px;
-    font-size: 20px;
-    text-align: center;
-    vertical-align: middle;
-    border: 1px solid #bbb;
-    line-height: 42px;
-    display: block;
-    transition: all 0.25s ease;
+  background-color: #fff;
+  color: #bbb;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 42px;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid #bbb;
+  transition: all 0.25s ease;
 }
 
-.hl-research {
-  min-width: 500px;
-  width: 48.2%;
-  padding: 3px;
-}
-.my-2 {
-  min-width: 500px;
-  max-width: 1000px;
-  margin: auto;
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-.dropdown-submenu {
-  position: relative;
+/* Utility */
+hr {
+  border-color: gray;
 }
 
 a {
@@ -157,6 +136,10 @@ a:hover {
   color: black;
 }
 
+/* Dropdown menu customization */
+.dropdown-submenu {
+  position: relative;
+}
 
 .dropdown-submenu .dropdown-menu {
   top: 0;
@@ -170,14 +153,11 @@ a:hover {
   border: 0;
 }
 
-.description {
-  background-color: #f8f9fa;
-  color: black;
-  padding: 20px;
-  border-radius: 10px;
+/* Centered responsive container if used */
+.my-2 {
+  min-width: 500px;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
-
-.description a{
-  color: blue;
-}
-
