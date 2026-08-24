@@ -6,67 +6,102 @@
   <title>Hui Lu</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./custom.css">
 </head>
-<body class="home-page">
-
-<div class="hero-bg" aria-hidden="true"></div>
-<div class="hero-glow" aria-hidden="true"></div>
+<body class="home-page direct-template">
 
 <header class="home-header">
   <div class="home-wrap nav-wrap">
     <a class="brand" href="index.html">Hui Lu</a>
-    <p class="ai-banner-note">This Homepage was Created with the Assistance of AI.</p>
     <nav class="main-nav" aria-label="Main navigation">
-      <a href="teaching.html">Teaching</a>
-      <a href="pub.html">Publications</a>
-      <a href="students.html">Students</a>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Funding</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#students">Students</a>
+      <a href="HuiLu_CV.pdf">CV</a>
     </nav>
   </div>
 </header>
 
-<main class="home-wrap">
-  <section class="hero">
-    <div class="hero-photo">
+<main class="home-wrap direct-home">
+  <section class="direct-hero" id="about">
+    <figure class="direct-photo">
       <img src="huilu.jpg" alt="Hui Lu portrait">
-    </div>
-    <div class="hero-copy">
-      <p class="eyebrow">Systems Research • Cloud Infrastructure • ML/AI Systems</p>
+    </figure>
+
+    <div class="direct-intro">
+      <p class="eyebrow">Systems Research · Cloud Infrastructure · AI Systems</p>
       <h1>Hui Lu</h1>
-      <p class="title-line">Assistant Professor, Computer Science and Engineering</p>
+      <p class="title-line">Associate Professor, Computer Science and Engineering</p>
       <p class="title-line"><a href="https://www.uta.edu/">The University of Texas at Arlington</a></p>
       <p class="title-line">Email: hui.lu at uta.edu</p>
+
       <p class="link-row">
-        <a href="https://www.linkedin.com/in/hui-lu-138b4456">LinkedIn</a>
+        <a href="HuiLu_CV.pdf">CV</a>
+        <a href="pub.html">Publications</a>
         <a href="https://scholar.google.co.uk/citations?user=UidAu3IAAAAJ&hl=en">Google Scholar</a>
-        <a href="HuiLu_Resume___S.pdf">CV</a>
+        <a href="https://www.linkedin.com/in/hui-lu-138b4456">LinkedIn</a>
       </p>
-      <p class="cta-note">I am looking for motivated students to work with. If you are interested, please drop me an email.</p>
     </div>
+
+    <p class="student-note">Motivated students interested in systems research are welcome to contact me by email.</p>
   </section>
 
-  <section class="card-section section-enter">
-    <h2>Welcome</h2>
-    <p>I am an Assistant Professor at the University of Texas at Arlington (UTA). My research interests span operating systems, systems virtualization, file and storage systems, computer networks, and systems performance optimization, especially in the context of cloud computing. Before joining UTA, I was an Assistant Professor at the State University of New York (SUNY) at Binghamton. I received my Ph.D. degree from Purdue University, where I researched in <a href="https://friends.cs.purdue.edu/">FRIENDS Lab</a> under the direction of Professor <a href="https://www.cs.purdue.edu/homes/dxu/">Dongyan Xu</a>.</p>
-    <p>I am the recipient of an <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2237966"><strong>NSF CAREER Award</strong></a> (2023).</p>
+  <section class="direct-section">
+    <h2>About</h2>
+    <p>
+      I am an Associate Professor at the University of Texas at Arlington (UTA).
+      My research interests span operating systems, systems virtualization, file
+      and storage systems, computer networks, and systems performance optimization,
+      especially in the context of cloud computing.
+    </p>
+    <p>
+      Before joining UTA, I was an Assistant Professor at the State University of
+      New York (SUNY) at Binghamton. I received my Ph.D. degree from Purdue
+      University, where I researched in <a href="https://friends.cs.purdue.edu/">FRIENDS Lab</a>
+      under the direction of Professor <a href="https://www.cs.purdue.edu/homes/dxu/">Dongyan Xu</a>.
+    </p>
+    <p>
+      I am the recipient of an <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2237966">NSF CAREER Award</a> (2023).
+    </p>
   </section>
 
-  <section class="card-section section-enter">
+  <section class="direct-section" id="research">
+    <h2>Research Focus</h2>
+    <p class="research-summary">
+      My research develops system software for cloud and AI infrastructure that
+      must remain efficient, reliable, and securely isolated under production
+      pressure. Recent projects explore secure container execution and nested
+      virtualization, tiered memory and storage systems, container networking,
+      and resource management for large-scale model training and inference.
+    </p>
+    <p>
+      Across these areas, I focus on the boundary where operating-system
+      mechanisms meet real deployment constraints: how to move data across memory
+      tiers without disrupting applications, how to isolate cloud-native
+      workloads without giving up performance, and how to make emerging AI
+      workloads use heterogeneous infrastructure more effectively.
+    </p>
+  </section>
+
+  <section class="direct-section" id="publications">
     <div class="section-head">
       <h2>Selected Publications</h2>
       <a class="all-link" href="pub.html">View full list</a>
     </div>
-    <ul class="fancy-list">
-      <li><strong>[SC 2026]</strong> <a href="#"> Quantifying the Cost of Software-Managed Synchronization on Multi-Host CXL Memory</a> (to appear)</li>
-      <li><strong>[OSDI 2026]</strong> <a href="pubs/osdi26-manakkal.pdf"> vBOIDs: Taming Chaos via Coarse-grained Scheduling Abstraction for Containers</a> </li>
-      <li><strong>[OSDI 2026]</strong> <a href="pubs/osdi26-janus.pdf"> JANUS: Cross-World, Cooperative Nested Virtualization for Secure Containers</a> </li>
-      <li><strong>[HPDC 2026]</strong> <a href="pubs/hpdc2026.pdf"> Scaling Attention Beyond GPUs for LLM Inference</a> </li>
-      <li><strong>[EuroSys 2026]</strong> <a href="pubs/aep.pdf">AEP: Achieving Hierarchical Fault Tolerance in DSM Through Atomic Execution Protection</a> </li>
-      <li><strong>[ICDE 2026]</strong> <a href="#">DLRover-LM: LLM Pre-Training Framework with Thousands of Accelerators in AntGroup</a> </li>
+    <ul class="plain-list publication-list">
+      <li><strong>[SC 2026]</strong> <a href="#">Quantifying the Cost of Software-Managed Synchronization on Multi-Host CXL Memory</a> (to appear)</li>
+      <li><strong>[OSDI 2026]</strong> <a href="pubs/osdi26-manakkal.pdf">vBOIDs: Taming Chaos via Coarse-grained Scheduling Abstraction for Containers</a></li>
+      <li><strong>[OSDI 2026]</strong> <a href="pubs/osdi26-janus.pdf">JANUS: Cross-World, Cooperative Nested Virtualization for Secure Containers</a></li>
+      <li><strong>[HPDC 2026]</strong> <a href="pubs/hpdc2026.pdf">Scaling Attention Beyond GPUs for LLM Inference</a></li>
+      <li><strong>[EuroSys 2026]</strong> <a href="pubs/aep.pdf">AEP: Achieving Hierarchical Fault Tolerance in DSM Through Atomic Execution Protection</a></li>
+      <li><strong>[ICDE 2026]</strong> <a href="#">DLRover-LM: LLM Pre-Training Framework with Thousands of Accelerators in AntGroup</a></li>
       <li><strong>[USENIX ATC 2025]</strong> <a href="pubs/atc25-manakkal.pdf">LITESHIELD: Secure Containers via Lightweight, Composable Userspace μKernel Services</a></li>
       <li><strong>[USENIX ATC 2025]</strong> <a href="pubs/atc25-liu-ruili.pdf">DSA-2LM: A CPU-Free Tiered Memory Architecture with Intel DSA</a></li>
-      <li><strong>[VLDB 2025]</strong> <a href="#">mLoRA: Fine-Tuning LoRA Adapters via Highly-Efficient Pipeline Parallelism in Multiple GPUs</a> </li>
+      <li><strong>[VLDB 2025]</strong> <a href="#">mLoRA: Fine-Tuning LoRA Adapters via Highly-Efficient Pipeline Parallelism in Multiple GPUs</a></li>
       <li><strong>[VLDB 2024]</strong> <a href="pubs/p4130-tang.pdf">DLRover-RM: Resource Optimization for Deep Recommendation Models Training in the Cloud</a></li>
       <li><strong>[OSDI 2024]</strong> <a href="pubs/nomad.pdf">Nomad: Non-exclusive Memory Tiering via Transactional Page Migration</a></li>
       <li><strong>[SOSP 2023]</strong> <a href="pubs/pvm.pdf">PVM: Efficient Shadow Paging for Deploying Secure Containers in Cloud-native Environment</a></li>
@@ -77,21 +112,66 @@
     </ul>
   </section>
 
-  <section class="card-section section-enter">
+  <section class="direct-section" id="projects">
     <h2>Sponsored Projects</h2>
     <h3>National Science Foundation (NSF)</h3>
-    <ul class="fancy-list">
-      <li><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2313147">User-transparent Data Management for Persistence and Crash-consistency in Non-volatile Memories</a> (2023 - 2027)</li> 
-      <li><a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2415774">Rethinking Virtualization in Cloud-Native Systems</a> (2023 - 2028)</li> 
-      <li><a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1909877">Salvaging Commodity Operating Systems to Support Emerging Networking Technologies</a> (2019 - 2023)</li> 
+    <ul class="plain-list">
+      <li><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2313147">User-transparent Data Management for Persistence and Crash-consistency in Non-volatile Memories</a> (2023 - 2027)</li>
+      <li><a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2415774">Rethinking Virtualization in Cloud-Native Systems</a> (2023 - 2028)</li>
+      <li><a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1909877">Salvaging Commodity Operating Systems to Support Emerging Networking Technologies</a> (2019 - 2023)</li>
     </ul>
+
     <h3>Air Force Research Laboratory (AFRL)</h3>
-    <ul class="fancy-list">
-      <li><a href="">Enabling Lightweight, Assured Secure Containers for Container-based Orchestration Platforms</a> (2025 - 2028)</li> 
-      <li><a href="">Enabling Lightweight Secure Containers with Assured Isolation</a> (2024 - 2025)</li> 
+    <ul class="plain-list">
+      <li><a href="#">Enabling Lightweight, Assured Secure Containers for Container-based Orchestration Platforms</a> (2025 - 2028)</li>
+      <li><a href="#">Enabling Lightweight Secure Containers with Assured Isolation</a> (2024 - 2025)</li>
+    </ul>
+  </section>
+
+  <section class="direct-section" id="teaching">
+    <h2>Teaching</h2>
+    <h3>UTA</h3>
+    <ul class="plain-list">
+      <li>CSE 3320: Operating Systems - Fall 2025, Fall 2024, Fall 2023</li>
+      <li>CSE 5359/6359: Advanced Topics in Systems &amp; Architecture - Fall 2025, Fall 2024</li>
+      <li>CSE 4372/5372: RISC Processor Design - Spring 2024</li>
+    </ul>
+
+    <h3>SUNY Binghamton</h3>
+    <ul class="plain-list">
+      <li>CS 552/452: Introduction to Cloud Computing - Spring 2023, Spring 2022, Fall 2021, Fall 2020, Spring 2020, Fall 2018, Fall 2017</li>
+      <li>CS 350: Operating Systems - Fall 2022, Spring 2022, Spring 2021, Fall 2019</li>
+      <li>CS 550: Operating Systems - Spring 2019, Spring 2018</li>
+    </ul>
+  </section>
+
+  <section class="direct-section" id="students">
+    <h2>Students</h2>
+
+    <h3>Current Ph.D. Students</h3>
+    <ul class="plain-list">
+      <li>Yan Wang (Fall 2025)</li>
+      <li>Yang Song (Fall 2025)</li>
+      <li>Chenfei Liao (Fall 2024)</li>
+      <li>Chengbo Zhan (Fall 2024)</li>
+      <li>Kaesi Manakkal (Fall 2023)</li>
+    </ul>
+
+    <h3>Alumni</h3>
+    <ul class="plain-list">
+      <li><a href="#">Yu Sun (Ph.D. 2025)</a></li>
+      <li><a href="https://www.linkedin.com/in/lin-zhen/">Zhen Lin (Ph.D. 2025)</a> - Software Engineer @ ByteDance</li>
+      <li><a href="https://www.kean.edu/directory/jiaxin-lei-0">Jiaxin Lei (Ph.D. 2024)</a> - Assistant Professor @ Kean University</li>
     </ul>
   </section>
 </main>
+
+<footer class="site-footer">
+  <div class="home-wrap">
+    <span>Hui Lu</span>
+    <span>Computer Science and Engineering, The University of Texas at Arlington</span>
+  </div>
+</footer>
 
 </body>
 </html>
