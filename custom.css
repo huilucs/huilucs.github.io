@@ -1522,6 +1522,54 @@ body.direct-template .brand {
   text-decoration: none;
 }
 
+body.direct-template .nav-toggle {
+  display: none;
+  align-items: center;
+  gap: 0.42rem;
+  padding: 0.15rem 0;
+  border: 0;
+  background: transparent;
+  color: #344252;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.93rem;
+  font-weight: 600;
+}
+
+body.direct-template .nav-toggle:hover,
+body.direct-template .nav-toggle:focus-visible {
+  color: var(--accent);
+}
+
+body.direct-template .nav-toggle-mark,
+body.direct-template .nav-toggle-mark::before,
+body.direct-template .nav-toggle-mark::after {
+  display: block;
+  width: 0.95rem;
+  height: 2px;
+  border-radius: 1px;
+  background: currentColor;
+  content: "";
+}
+
+body.direct-template .nav-toggle-mark {
+  position: relative;
+}
+
+body.direct-template .nav-toggle-mark::before,
+body.direct-template .nav-toggle-mark::after {
+  position: absolute;
+  left: 0;
+}
+
+body.direct-template .nav-toggle-mark::before {
+  top: -0.3rem;
+}
+
+body.direct-template .nav-toggle-mark::after {
+  top: 0.3rem;
+}
+
 body.direct-template .main-nav {
   display: flex;
   flex-wrap: wrap;
@@ -1690,55 +1738,6 @@ body.direct-template .all-link {
   content: none;
 }
 
-.student-roster {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.15rem;
-  margin-top: 0.45rem;
-}
-
-.student-group {
-  min-width: 0;
-}
-
-body.direct-template .student-group h3 {
-  margin: 0;
-  font-size: 1rem;
-}
-
-.student-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.student-list li {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-  gap: 0.45rem;
-  padding: 0.58rem 0;
-  line-height: 1.35;
-}
-
-.student-person {
-  flex: 0 0 auto;
-  color: var(--ink);
-  font-weight: 400;
-}
-
-.student-list a.student-person {
-  color: var(--link);
-}
-
-.student-detail {
-  flex: 0 1 auto;
-  min-width: 0;
-  color: var(--muted);
-  font-size: 0.92rem;
-  text-align: left;
-}
-
 body.direct-template .publication-list {
   display: block;
   list-style: disc;
@@ -1826,8 +1825,28 @@ body.direct-template .site-footer span:first-child {
   }
 
   body.direct-template .nav-wrap {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.6rem;
+  }
+
+  html.js-nav body.direct-template .nav-toggle {
+    display: inline-flex;
+    justify-self: end;
+  }
+
+  html.js-nav body.direct-template .main-nav {
+    display: none;
+    grid-column: 1 / -1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 0.55rem;
+    padding: 0.7rem 0 0.1rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  html.js-nav body.direct-template .main-nav[data-open="true"] {
+    display: flex;
   }
 
   body.direct-template .main-nav {
@@ -1840,11 +1859,7 @@ body.direct-template .site-footer span:first-child {
   }
 
   .direct-section {
-    scroll-margin-top: 10rem;
-  }
-
-  .direct-section#students {
-    padding-top: 3.75rem;
+    scroll-margin-top: 5rem;
   }
 
   .section-head {
@@ -1862,16 +1877,6 @@ body.direct-template .site-footer span:first-child {
 
   body.direct-template .role-line {
     white-space: normal;
-  }
-
-  .student-list li {
-    display: block;
-  }
-
-  .student-detail {
-    display: block;
-    margin-top: 0.14rem;
-    text-align: left;
   }
 
 }
