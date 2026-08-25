@@ -1550,7 +1550,7 @@ body.direct-template .main-nav a:focus-visible {
 .direct-hero {
   display: grid;
   grid-template-columns: 210px minmax(0, 1fr);
-  column-gap: clamp(1.5rem, 4vw, 2.7rem);
+  column-gap: 2rem;
   row-gap: 1rem;
   align-items: start;
   padding: clamp(2.2rem, 5vw, 3.6rem) 0 2rem;
@@ -1603,6 +1603,10 @@ body.direct-template h3 {
   font-size: 1.05rem;
 }
 
+body.direct-template h3[id] {
+  scroll-margin-top: 5rem;
+}
+
 body.direct-template p {
   margin: 0 0 1rem;
 }
@@ -1617,15 +1621,19 @@ body.direct-template .title-line {
   font-size: 1rem;
 }
 
+body.direct-template .role-line {
+  white-space: nowrap;
+}
+
 .intro-text {
-  max-width: 690px;
+  max-width: none;
   margin-top: 1rem;
   color: #2c3947;
   font-size: 1.08rem;
 }
 
 .research-summary {
-  max-width: 760px;
+  max-width: none;
   margin-bottom: 1.05rem;
   color: #2c3947;
   font-size: 1.05rem;
@@ -1655,7 +1663,7 @@ body.direct-template .all-link {
 }
 
 .direct-section > p {
-  max-width: 760px;
+  max-width: none;
   color: #2c3947;
 }
 
@@ -1682,6 +1690,55 @@ body.direct-template .all-link {
   content: none;
 }
 
+.student-roster {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.15rem;
+  margin-top: 0.45rem;
+}
+
+.student-group {
+  min-width: 0;
+}
+
+body.direct-template .student-group h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.student-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.student-list li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 0.45rem;
+  padding: 0.58rem 0;
+  line-height: 1.35;
+}
+
+.student-person {
+  flex: 0 0 auto;
+  color: var(--ink);
+  font-weight: 400;
+}
+
+.student-list a.student-person {
+  color: var(--link);
+}
+
+.student-detail {
+  flex: 0 1 auto;
+  min-width: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  text-align: left;
+}
+
 body.direct-template .publication-list {
   display: block;
   list-style: disc;
@@ -1700,6 +1757,11 @@ body.direct-template .publication-list strong {
   color: #263442;
 }
 
+body.direct-template .publication-list a,
+body.sub-page .pub-list a.fw-bold {
+  font-weight: 400;
+}
+
 body.direct-template a {
   color: var(--link);
 }
@@ -1709,13 +1771,16 @@ body.direct-template a:hover {
 }
 
 .student-note {
-  width: fit-content;
-  max-width: 100%;
-  padding: 0.75rem 0.9rem;
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+  padding: 0.42rem 0.9rem;
   background: #f4e8ea;
   border-left: 3px solid var(--accent);
   color: #4d2930;
+  font-size: 0.92rem;
   font-weight: 600;
+  line-height: 1.35;
   white-space: nowrap;
 }
 
@@ -1733,14 +1798,15 @@ body.direct-template .site-footer {
 body.direct-template .site-footer .home-wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 0.8rem;
+  text-align: center;
 }
 
 body.direct-template .site-footer span:first-child {
   color: var(--ink);
-  font-family: "Source Serif 4", Georgia, serif;
-  font-weight: 700;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-weight: 500;
 }
 
 @media (max-width: 860px) {
@@ -1773,6 +1839,14 @@ body.direct-template .site-footer span:first-child {
     padding-top: 1.7rem;
   }
 
+  .direct-section {
+    scroll-margin-top: 10rem;
+  }
+
+  .direct-section#students {
+    padding-top: 3.75rem;
+  }
+
   .section-head {
     display: block;
   }
@@ -1784,6 +1858,20 @@ body.direct-template .site-footer span:first-child {
 
   body.direct-template .direct-hero .student-note {
     white-space: normal;
+  }
+
+  body.direct-template .role-line {
+    white-space: normal;
+  }
+
+  .student-list li {
+    display: block;
+  }
+
+  .student-detail {
+    display: block;
+    margin-top: 0.14rem;
+    text-align: left;
   }
 
 }
