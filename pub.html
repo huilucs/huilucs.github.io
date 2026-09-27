@@ -3,325 +3,196 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hui Lu - Publications</title>
+  <title>Publications — Hui Lu</title>
+  <meta name="description" content="Full publication list of Hui Lu, Associate Professor of Computer Science and Engineering at the University of Texas at Arlington.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b5fb0'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-weight='700' font-size='32' fill='white' text-anchor='middle'%3EHL%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./custom.css">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
 </head>
-<body class="home-page sub-page">
-<div class="hero-bg" aria-hidden="true"></div>
-<div class="hero-glow" aria-hidden="true"></div>
+<body>
 
-<header class="home-header">
-  <div class="home-wrap nav-wrap">
+<header class="site-nav">
+  <div class="wrap">
     <a class="brand" href="index.html">Hui Lu</a>
-    <p class="ai-banner-note">This Homepage was Created with the Assistance of AI.</p>
-    <nav class="main-nav" aria-label="Main navigation">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav-links" id="nav-links" aria-label="Main navigation">
       <a href="index.html#about">About</a>
       <a href="index.html#research">Research</a>
-      <a href="pub.html">Publications</a>
-      <a href="index.html#projects">Projects</a>
+      <a href="pub.html" aria-current="page">Publications</a>
+      <a href="index.html#funding">Funding</a>
       <a href="index.html#teaching">Teaching</a>
       <a href="index.html#students">Students</a>
     </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
   </div>
 </header>
 
-<main class="home-wrap subpage-wrap">
-  <section class="card-section section-enter">
-    <div class="section-head">
-      <h1 class="page-title">Publications</h1>
-      <a class="all-link" href="https://scholar.google.co.uk/citations?user=UidAu3IAAAAJ&hl=en">Google Scholar</a>
-    </div>
-        <ul class="pub-list">
-          <li class="mb-4">
-            <span>SC 2026</span>
-            <a href="#" class="fw-bold">Quantifying the Cost of Software-Managed Synchronization on Multi-Host CXL Memory</a><br>
-            <em>The International Conference for High Performance Computing, Networking, Storage, and Analysis</em>, 2026<br>
-            <small class="text-muted">To appear</small>
-          </li>
-          <li class="mb-4">
-            <span>OSDI 2026</span>
-            <a href="pubs/osdi26-manakkal.pdf" class="fw-bold">vBOIDs: Taming Chaos via Coarse-Grained Scheduling Abstraction for Containers</a><br>
-            Kaesi Manakkal, Nathan Daughety, Yu Sun, Marcus Pendleton, and Hui Lu<br>
-            <em>20th USENIX Symposium on Operating Systems Design and Implementation</em>, 2026<br>
-            <small class="text-muted">Acceptance Rate: 19.9% (136/681)</small>
-          </li>
-          <li class="mb-4">
-            <span>OSDI 2026</span>
-            <a href="pubs/osdi26-janus.pdf" class="fw-bold">JANUS: Cross-World, Cooperative Nested Virtualization for Secure Containers</a><br>
-            Jiangshan Lai, Hang Huang, Quan Xu, Zhen Ren, Wenlong Hou, Wei Guo, Jia Rao, Hui Lu, Weidong Han, Jiesheng Wu, Jiang Liu, Naixuan Guan, Yibin Shen, Feng Yu, Xu Wang, Shiqiang Zhang, Zhiheng Tao, Yisheng Xie, Song Wu, Hai Jin<br>
-            <em>20th USENIX Symposium on Operating Systems Design and Implementation</em>, 2026<br>
-            <small class="text-muted">Acceptance Rate: 19.9% (136/681)</small>
-          </li>
-          <li class="mb-4">
-            <span>HPDC 2026</span>
-            <a href="pubs/hpdc2026.pdf" class="fw-bold">Scaling Attention Beyond GPUs for LLM Inference</a><br>
-            Weishu Deng, Yujie Yang, Peiran Du, Lingfeng Xiang, Zhen Lin, Chen Zhong, Faraz Ahmed, Lianjie Cao, Puneet Sharma, Song Jiang, Hui Lu, and Jia Rao<br>
-            <em>In Proceedings of the 35th International Symposium on High-Performance Parallel and Distributed Computing</em>, 2026<br>
-            <small class="text-muted">Acceptance Rate: 12.5% (35/281)</small>
-          </li>
-          <li class="mb-4">
-            <span>EuroSys 2026</span>
-            <a href="pubs/aep.pdf" class="fw-bold">AEP: Achieving Hierarchical Fault Tolerance in DSM Through Atomic Execution Protection</a><br>
-            Zixuan Wang, Qi Wu, Hang Huang, Jia Rao, Hui Lu, Hao Fan, Zhuo Huang, Song Wu, Hai Jin<br>
-            <em>Proceedings of the 21st European Conference on Computer Systems</em>, 2026<br>
-            <small class="text-muted">Acceptance Rate: 18.5% (59/319 -- Fall)</small>
-          </li>
-          <li class="mb-4">
-            <span>ICDE 2026</span>
-            <a href="#" class="fw-bold">DLRover-LM: LLM Pre-Training Framework with Thousands of Accelerators in AntGroup</a><br>
-            Ziling Huang, Zhengmao Ye, Qingsong Cai, Zelong Huang, Bo Sang, Haitao Zhang, Jian Sha, Tingfeng Lan, Hui Lu, Yuanchun Zhou, Mingjie Tang<br>
-            <em>42nd IEEE International Conference on Data Engineering</em>, 2026<br>
-            <small class="text-muted">Acceptance Rate: ?%</small>
-          </li>
-          <li class="mb-4">
-            <span>SYSTOR 2025</span>
-            <a href="pubs/systor-25.pdf" class="fw-bold">Can Hardware Outsmart Software in Tiered Memory Management? A CMM-H Case Study</a><br>
-            Zhen Lin, Yujie Yang, Lingfeng Xiang, Lianjie Cao, Faraz Ahmed, Jia Rao, Hui Lu, Puneet Sharma<br>
-            <em>ACM International Systems and Storage Conference</em>, 2025<br>
-            <small class="text-muted">Acceptance Rate: 37.2% (16/43)</small>
-          </li>
-          <li class="mb-4">
-            <span>USENIX ATC 2025</span>
-            <a href="pubs/atc25-manakkal.pdf" class="fw-bold">LITESHIELD: Secure Containers via Lightweight, Composable Userspace μKernel Services</a><br>
-            Kaesi Manakkal, Nathan Daughety, Marcus Pendleton, Hui Lu<br>
-            <em>USENIX Annual Technical Conference</em>, 2025<br>
-            <small class="text-muted">Acceptance Rate: 15.8% (100/634)</small>
-          </li>
-          <li class="mb-4">
-            <span>USENIX ATC 2025</span>
-            <a href="pubs/atc25-liu-ruili.pdf" class="fw-bold">DSA-2LM: A CPU-Free Tiered Memory Architecture with Intel DSA</a><br>
-            Ruili Liu, Teng Ma, Mingxing Zhang, Jialiang Huang, Yingdi Shan, Zheng Liu, Lingfeng Xiang, Zhen Lin, Hui Lu, Jia Rao, Kang Chen, Yongwei Wu<br>
-            <em>USENIX Annual Technical Conference</em>, 2025<br>
-            <small class="text-muted">Acceptance Rate: 15.8% (100/634)</small>
-          </li>
-          <li class="mb-4">
-            <span>VLDB 2025</span>
-            <a href="#" class="fw-bold">mLoRA: Fine-Tuning LoRA Adapters via Highly-Efficient Pipeline Parallelism in Multiple GPUs</a><br>
-            Zhengmao Ye, Dengchun Li, Zetao Hu, Tingfen Lan, Sha Jian, Sicong Zheng, Lei Duan, Jie Zuo, Hui Lu, Yuanchun Zhou, Mingjie Tang<br>
-            <em>Proceedings of Very Large Data Bases Conference</em>, 2025<br>
-            <small class="text-muted">Acceptance Rate: ?%</small>
-          </li>
-          <li class="mb-4">
-            <span>OSDI 2024</span>
-            <a href="pubs/nomad.pdf" class="fw-bold">Nomad: Non-Exclusive Memory Tiering via Transactional Page Migration</a><br>
-            Lingfeng Xiang, Zhen Lin, Weishu Deng, Hui Lu, Jia Rao, Yifan Yuan, Ren Wang<br>
-            <em>USENIX Symposium on Operating Systems Design and Implementation</em>, 2024<br>
-            <small class="text-muted">Acceptance Rate: 17.4% (49/282)</small>
-          </li>
-          <li class="mb-4">
-            <span>VLDB 2024</span>
-            <a href="pubs/p4130-tang.pdf" class="fw-bold">DLRover-RM: Resource Optimization for Deep Recommendation Models Training in Cloud</a><br>
-            Qinlong Wang, Tingfeng Lan, Yinghao Tang, Bo Sang, Ziling Huang, Yihen Du, Haitao Zhang, Shajian, Ke Zhang, Hui Lu, Yuanchun Zhou, Mingjie Tang<br>
-            <em>Proceedings of Very Large Data Bases Conference</em>, 2024<br>
-            <small class="text-muted">Acceptance Rate: 20%</small>
-          </li>
-          <li class="mb-4">
-            <span>SOSP 2023</span>
-            <a href="pubs/pvm.pdf" class="fw-bold">PVM: Efficient Shadow Paging for Deploying Secure Containers in Cloud-native Environment</a><br>
-            Hang Huang, Jiangshan Lai, Jia Rao, Hui Lu, et al.<br>
-            <em>Symposium on Operating Systems Principles</em>, 2023<br>
-            <small class="text-muted">Acceptance Rate: 18.7% (43/229)</small>
-          </li>
-          <li class="mb-4">
-            <span>HotStorage 2023</span>
-            <a href="pubs/shruti.pdf" class="fw-bold">When Caching Systems Meet Emerging Storage Devices: A Case Study</a><br>
-            Zhen Lin, Lianjie Cao, Faraz Ahmed, Hui Lu, Puneet Sharma<br>
-            <em>ACM Workshop on Hot Topics in Storage and File Systems</em>, 2023<br>
-            <small class="text-muted">Acceptance Rate: 39.5% (17/43)</small>
-          </li>
-          <li class="mb-4">
-            <span>USENIX ATC 2023</span>
-            <a href="pubs/atc23-lin.pdf" class="fw-bold">P2CACHE: Exploring Tiered Memory for In-Kernel File Systems Caching</a><br>
-            Zhen Lin, Lingfeng Xiang, Jia Rao, Hui Lu<br>
-            <em>USENIX Annual Technical Conference</em>, 2023<br>
-            <small class="text-muted">Acceptance Rate: 18.4% (65/353)</small>
-          </li>
-          <li class="mb-4">
-            <span>IPDPS 2023</span>
-            <a href="pubs/ipdps2023_lei.pdf" class="fw-bold">mFlow: Accelerating Packet Processing in Container Overlay Networks via Packet-level Parallelism</a><br>
-            Jiaxin Lei, Manish Munikar, Hui Lu, Jia Rao<br>
-            <em>IEEE Int'l Parallel &amp; Distributed Processing Symposium</em>, 2023<br>
-            <small class="text-muted">Acceptance Rate: 25.7% (95/369)</small>
-          </li>
-          <li class="mb-4">
-            <span>ICDCS 2022</span>
-            <a href="pubs/ppsync3.pdf" class="fw-bold">PRISM: Streamlined Packet Processing for Containers with Flow Prioritization</a><br>
-            Manish Munikar, Jiaxin Lei, Hui Lu, Jia Rao<br>
-            <em>IEEE Int'l Conference on Distributed Computing Systems</em>, 2022<br>
-            <small class="text-muted">Acceptance Rate: 19.9% (114/573)</small>
-          </li>
-          <li class="mb-4">
-            <span>PLOS@SOSP 2021</span>
-            <a href="pubs/plos.pdf" class="fw-bold">FlashCube: Fast Provisioning of Serverless Functions with Streamlined Container Runtimes</a><br>
-            Zhen Lin, Kao-Feng Hsieh, Yu Sun, Seunghee Shin, Hui Lu<br>
-            <em>Workshop on Programming Languages and Operating Systems</em>, 2021<br>
-          </li>
-          <li class="mb-4">
-            <span>EuroSys 2021</span>
-            <a href="pubs/eurosys21-final134.pdf" class="fw-bold">Parallelizing Packet Processing in Container Overlay Networks</a><br>
-            Jiaxin Lei*, Manish Munikar*, Kun Suo*, Hui Lu, Jia Rao<br>
-            <em>European Conference on Computer Systems</em>, 2021<br>
-            <small class="text-muted">Acceptance Rate: 19.9% (38/191)</small>
-          </li>
-          <li class="mb-4">
-            <span>SoCC 2020</span>
-            <a href="pubs/SOCC20.pdf" class="fw-bold">BAOVERLAY: A Block-Accessible Overlay File System for Fast and Efficient Container Storage</a><br>
-            Yu Sun, Jiaxin Lei, Seunghee Shin, Hui Lu<br>
-            <em>ACM Symposium on Cloud Computing</em>, 2020<br>
-            <small class="text-muted">Acceptance Rate: 24% (35/143)</small>
-          </li>
-          <li class="mb-4">
-            <span>CLOUD 2020</span>
-            <a href="https://ieeexplore.ieee.org/abstract/document/9284214" class="fw-bold">FedMax: Enabling a Highly-Efficient Federated Learning Framework</a><br>
-            Haohang Xu, Jin Li, Hongkai Xiong, Hui Lu<br>
-            <em>IEEE Int'l Conference for Cloud Computing</em>, 2020<br>
-            <small class="text-muted">Acceptance Rate: 20.7% (53/256)</small>
-          </li>
-          <li class="mb-4">
-            <span>EuroSys 2020</span>
-            <a href="pubs/plasma.pdf" class="fw-bold">PLASMA: Programmable Elasticity for Stateful Cloud Computing Applications</a><br>
-            Bo Sang, Pierre-Louis Roman, Patrick Eugster, Hui Lu, Srivatsan Ravi, Gustavo Petri<br>
-            <em>European Conference on Computer Systems</em>, 2020<br>
-            <small class="text-muted">Acceptance Rate: 18.4% (43/234)</small>
-          </li>
-          <li class="mb-4">
-            <span>INFOCOM 2020</span>
-            <a href="pubs/infocom20.pdf" class="fw-bold">SDN-based Order-aware Live Migration of Virtual Machines</a><br>
-            Dinuni Fernando, Ping Yang, Hui Lu<br>
-            <em>IEEE Int'l Conference on Computer Communications</em>, 2020<br>
-            <small class="text-muted">Acceptance Rate: 19.8% (268/1354)</small>
-          </li>
-          <li class="mb-4">
-            <span>HotCloud 2019</span>
-            <a href="pubs/hotcloud19-paper-lei.pdf" class="fw-bold">Tackling Parallelization Challenges of Kernel Network Stack for Container Overlay Networks</a><br>
-            Jiaxin Lei, Kun Suo, Hui Lu, Jia Rao<br>
-            <em>USENIX Workshop on Hot Topics in Cloud Computing</em>, 2019<br>
-            <small class="text-muted">Acceptance Rate: 37.3% (22/59)</small>
-          </li>
-          <li class="mb-4">
-            <span>Cloud 2019</span>
-            <a href="https://ieeexplore.ieee.org/document/8814504" class="fw-bold">Exploring Potential for Non-Disruptive Vertical Auto Scaling and Resource Estimation in Kubernetes</a><br>
-            Gourav Rattihalli, Madhusudhan Govindaraju, Hui Lu, Devesh Tiwari<br>
-            <em>IEEE Int'l Conference for Cloud Computing</em>, 2019<br>
-            <small class="text-muted">Invited</small>
-          </li>
-          <li class="mb-4">
-            <span>IC2E 2019</span>
-            <a href="pubs/shadenf.pdf" class="fw-bold">ShadeNF: Testing Online Network Functions</a><br>
-            Hui Lu, Abhinav Srivastava, Yu Sun<br>
-            <em>IEEE Int'l Conference on Cloud Engineering</em>, 2019<br>
-            <small class="text-muted">Acceptance Rate: 26%</small>
-          </li>
-          <li class="mb-4">
-            <span>DCPerf@INFOCOM 2019</span>
-            <a href="pubs/mWarp.pdf" class="fw-bold">mWarp: Accelerating Intra-Host Live Container Migration via Memory Warping</a><br>
-            Piush Kumar Sinha, Spoorti Doddamani, Hui Lu, Kartik Gopalan<br>
-            <em>IEEE INFOCOM Workshops</em>, 2019<br>
-            <small class="text-muted">Invited</small>
-          </li>
-          <li class="mb-4">
-            <span>VEE 2019</span>
-            <a href="pubs/doddamani19fast.pdf" class="fw-bold">Fast and Live Hypervisor Replacement</a><br>
-            Spoorti Doddamani, Piush Sinha, Hui Lu, Tsu-Hsiang K Cheng, Hardik H Bagdi, Kartik Gopalan<br>
-            <em>ACM SIGPLAN/SIGOPS Conference on Virtual Execution Environments</em>, 2019<br>
-          </li>
-          <li class="mb-4">
-            <span>SoCC Poster 2018</span>
-            <a href="pubs/p525-Sun.pdf" class="fw-bold">ShadeNF: A Platform for Online Network Function Verification (Poster)</a><br>
-            Yu Sun, Hui Lu, Abhinav Srivastava, Cong Xu<br>
-            <em>Poster: ACM Symposium on Cloud Computing</em>, 2018<br>
-          </li>
-          <li class="mb-4">
-            <span>PhD dissertation</span>
-            <a href="https://search.proquest.com/docview/1959307636?pq-origsite=gscholar" class="fw-bold">Rethinking Cloud Storage System Software under Multi-Tenancy (Thesis)</a><br>
-            Hui Lu<br>
-            <em>Purdue University</em>, 2017
-          </li>
-          <li class="mb-4">
-            <span>SoCC 2016</span>
-            <a href="pubs/bass.pdf" class="fw-bold">BASS: Improving I/O Performance for Cloud Block Storage via Byte-Addressable Storage Stack</a><br>
-            Hui Lu, Brendan Saltaformaggio, Cong Xu, Umesh Bellur, Dongyan Xu<br>
-            <em>ACM Symposium on Cloud Computing</em>, 2016<br>
-            <small class="text-muted">Acceptance Rate: 25%</small>
-          </li>
-          <li class="mb-4">
-            <span>DSN 2016</span>
-            <a href="pubs/storm_dsn.pdf" class="fw-bold">StorM: Enabling Tenant-Defined Cloud Storage Middle-Box Services</a><br>
-            Hui Lu, Abhinav Srivastava, Brendan Saltaformaggio, Dongyan Xu<br>
-            <em>IEEE/IFIP Int'l Conference on Dependable Systems and Networks</em>, 2016<br>
-            <small class="text-muted">Acceptance Rate: 22.3%</small>
-          </li>
-          <li class="mb-4">
-            <span>SoCC 2015</span>
-            <a href="pubs/vfair.pdf" class="fw-bold">vFair: Latency-Aware Fair Storage Scheduling via Per-IO Cost-Based Differentiation</a><br>
-            Hui Lu, Brendan Saltaformaggio, Ramana Kompella, Dongyan Xu<br>
-            <em>ACM Symposium on Cloud Computing</em>, 2015<br>
-            <small class="text-muted">Acceptance Rate: 21.6%</small>
-          </li>
-          <li class="mb-4">
-            <span>CLOUD 2015</span>
-            <a href="pubs/vhaul.pdf" class="fw-bold">vHaul: Towards Optimal Scheduling of Live Multi-VM Migration for Multi-tier Applications</a><br>
-            Hui Lu, Cong Xu, Cheng Cheng, Ramana Kompella, Dongyan Xu<br>
-            <em>IEEE Int'l Conference on Cloud Computing</em>, 2015<br>
-            <small class="text-muted">Acceptance Rate: 14%</small>
-          </li>
-          <li class="mb-4">
-            <span>Middleware 2013</span>
-            <a href="pubs/hybnet.pdf" class="fw-bold">Hybnet: Network manager for a hybrid network infrastructure</a><br>
-            Hui Lu, Nipun Arora, Hui Zhang, Cristian Lumezanu, Junghwan Rhee, Guofei Jiang<br>
-            <em>ACM/IFIP/USENIX International Middleware Conference (Industry Track)</em>, 2013<br>
-            <small class="text-muted">Acceptance Rate: 22.7%</small>
-          </li>
-          <li class="mb-4">
-            <span>USENIX ATC 2013</span>
-            <a href="pubs/vturbo.pdf" class="fw-bold">vTurbo: Accelerating Virtual Machine I/O Processing Using Designated Turbo-Sliced Core</a><br>
-            Cong Xu, Sahan Gamage, Hui Lu, Ramana Kompella, Dongyan Xu<br>
-            <em>USENIX Annual Technical Conference</em>, 2013<br>
-            <small class="text-muted">Acceptance Rate: 14.2%</small>
-          </li>
-          <li class="mb-4">
-            <span>VEE 2012</span>
-            <a href="pubs/vee12.pdf" class="fw-bold">Virtualization challenges: a view from server consolidation perspective</a><br>
-            Hui Lu, Yaozu Dong, Jiangang Duan, Kevin Tian<br>
-            <em>ACM SIGPLAN/SIGOPS Conference on Virtual Execution Environments</em>, 2012<br>
-            <small class="text-muted">Acceptance Rate: 37.7%</small>
-          </li>
-          <li class="mb-4">
-            <span>IISWC 2010</span>
-            <a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5654398" class="fw-bold">Tackling the challenges of server consolidation on multi-core systems</a><br>
-            Hui Lu, Xudong Zheng, Zhiteng Huang, Jiangang Duan<br>
-            <em>IEEE Int'l Symposium on Workload Characterization</em>, 2010<br>
-            <small class="text-muted">Acceptance Rate: 37.5%</small>
-          </li>
-          <li class="mb-4">
-            <span>Journal 2010</span>
-            <a href="http://link.springer.com/article/10.1155/2009/386795" class="fw-bold">Subgraphs matching-based side information generation for distributed multiview video coding</a><br>
-            Hongkai Xiong, Hui Lu, Yongsheng Zhang, Li Song, Zhihai He, Tsuhan Chen<br>
-            <em>EURASIP Journal on Advances in Signal Processing</em>, 2010<br>
-          </li>
-          <li class="mb-4">
-            <span>ICC 2009</span>
-            <a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5199048" class="fw-bold">Graph matching based side information generation for distributed multi-view video coding</a><br>
-            Hui Lu, Hongkai Xiong, Li Song, Zhihai He, Tsuhan Chen<br>
-            <em>IEEE Int'l Conference on Communications</em> 2009<br>
-          </li>
-          <li class="mb-4">
-            <span>ISCAS 2008</span>
-            <a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=4542201" class="fw-bold">Side information generation with constrained relaxation for distributed multi-view video coding</a><br>
-            Hui Lu, Hongkai Xiong, Yongsheng Zhang, Zhihai He<br>
-            <em>IEEE Int'l Symposium on Circuits and Systems</em> 2008<br>
-          </li>
-          <li class="mb-4">
-            <span>ICME 2007</span>
-            <a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=4284609" class="fw-bold">A Source-Driven Error Recovery Scheme using Wyner-Ziv Coding</a><br>
-            Yongsheng Zhang, Hongkai Xiong, Songu Yu, Hui Lu<br>
-            <em>IEEE Int'l Conference on Multimedia and Expo</em> 2007<br>
-          </li>
-        </ul>
-  </section>
+<main class="wrap">
+  <div class="page-head">
+    <h1>Publications</h1>
+    <p>Peer-reviewed papers, ordered by year. Filter by research theme or search by title, author, or venue. Also on <a href="https://scholar.google.co.uk/citations?user=UidAu3IAAAAJ&amp;hl=en">Google Scholar</a>.</p>
+  </div>
+
+  <div class="pub-tools">
+    <input type="search" id="pub-search" placeholder="Search titles, authors, venues…" aria-label="Search publications">
+    <div class="chips" role="group" aria-label="Filter by topic"><button class="chip" type="button" data-topic="all" aria-pressed="true">All</button><button class="chip" type="button" data-topic="memory" aria-pressed="false">Memory &amp; CXL</button><button class="chip" type="button" data-topic="virt" aria-pressed="false">Containers &amp; Virtualization</button><button class="chip" type="button" data-topic="net" aria-pressed="false">Networking &amp; Storage</button><button class="chip" type="button" data-topic="ai" aria-pressed="false">Systems for AI</button><button class="chip" type="button" data-topic="early" aria-pressed="false">Early work</button></div>
+    <span class="pub-count" id="pub-count"></span>
+  </div>
+
+  <div id="pub-groups">
+<section class="year-group" data-year="2026"><h2>2026</h2><ul class="pub-full">
+<li id="atc26" data-topics="virt net" data-search="courier: host-transparent direct network i/o for secure containers in cloud vms  usenix atc usenix annual technical conference"><span class="venue">USENIX ATC 2026</span><span class="title">Courier: Host-Transparent Direct Network I/O for Secure Containers in Cloud VMs</span><span class="where">USENIX Annual Technical Conference</span><span class="note"><span class="tag">To appear</span></span></li>
+<li id="sc26" data-topics="memory" data-search="quantifying the cost of software-managed synchronization on multi-host cxl memory  sc the international conference for high performance computing, networking, storage, and analysis"><span class="venue">SC 2026</span><span class="title">Quantifying the Cost of Software-Managed Synchronization on Multi-Host CXL Memory</span><span class="where">The International Conference for High Performance Computing, Networking, Storage, and Analysis</span><span class="note"><span class="tag">To appear</span></span></li>
+<li data-topics="virt" data-search="vboids: taming chaos via coarse-grained scheduling abstraction for containers kaesi manakkal, nathan daughety, yu sun, marcus pendleton, and hui lu osdi 20th usenix symposium on operating systems design and implementation"><span class="venue">OSDI 2026</span><a class="title" href="pubs/osdi26-manakkal.pdf">vBOIDs: Taming Chaos via Coarse-Grained Scheduling Abstraction for Containers</a><span class="authors">Kaesi Manakkal, Nathan Daughety, Yu Sun, Marcus Pendleton, and <b>Hui Lu</b></span><span class="where">20th USENIX Symposium on Operating Systems Design and Implementation</span><span class="note">Acceptance rate 19.9% (136/681)</span><span class="pdf"><a href="pubs/osdi26-manakkal.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+<li data-topics="virt" data-search="janus: cross-world, cooperative nested virtualization for secure containers jiangshan lai, hang huang, quan xu, zhen ren, wenlong hou, wei guo, jia rao, hui lu, weidong han, jiesheng wu, jiang liu, naixuan guan, yibin shen, feng yu, xu wang, shiqiang zhang, zhiheng tao, yisheng xie, song wu, hai jin osdi 20th usenix symposium on operating systems design and implementation"><span class="venue">OSDI 2026</span><a class="title" href="pubs/osdi26-janus.pdf">JANUS: Cross-World, Cooperative Nested Virtualization for Secure Containers</a><span class="authors">Jiangshan Lai, Hang Huang, Quan Xu, Zhen Ren, Wenlong Hou, Wei Guo, Jia Rao, <b>Hui Lu</b>, Weidong Han, Jiesheng Wu, Jiang Liu, Naixuan Guan, Yibin Shen, Feng Yu, Xu Wang, Shiqiang Zhang, Zhiheng Tao, Yisheng Xie, Song Wu, Hai Jin</span><span class="where">20th USENIX Symposium on Operating Systems Design and Implementation</span><span class="note">Acceptance rate 19.9% (136/681)</span><span class="pdf"><a href="pubs/osdi26-janus.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+<li data-topics="ai memory" data-search="scaling attention beyond gpus for llm inference weishu deng, yujie yang, peiran du, lingfeng xiang, zhen lin, chen zhong, faraz ahmed, lianjie cao, puneet sharma, song jiang, hui lu, and jia rao hpdc 35th international symposium on high-performance parallel and distributed computing"><span class="venue">HPDC 2026</span><a class="title" href="pubs/hpdc2026.pdf">Scaling Attention Beyond GPUs for LLM Inference</a><span class="authors">Weishu Deng, Yujie Yang, Peiran Du, Lingfeng Xiang, Zhen Lin, Chen Zhong, Faraz Ahmed, Lianjie Cao, Puneet Sharma, Song Jiang, <b>Hui Lu</b>, and Jia Rao</span><span class="where">35th International Symposium on High-Performance Parallel and Distributed Computing</span><span class="note">Acceptance rate 12.5% (35/281)</span><span class="pdf"><a href="pubs/hpdc2026.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+<li data-topics="memory" data-search="aep: achieving hierarchical fault tolerance in dsm through atomic execution protection zixuan wang, qi wu, hang huang, jia rao, hui lu, hao fan, zhuo huang, song wu, hai jin eurosys 21st european conference on computer systems"><span class="venue">EuroSys 2026</span><a class="title" href="pubs/aep.pdf">AEP: Achieving Hierarchical Fault Tolerance in DSM Through Atomic Execution Protection</a><span class="authors">Zixuan Wang, Qi Wu, Hang Huang, Jia Rao, <b>Hui Lu</b>, Hao Fan, Zhuo Huang, Song Wu, Hai Jin</span><span class="where">21st European Conference on Computer Systems</span><span class="note">Acceptance rate 18.5% (59/319, Fall)</span><span class="pdf"><a href="pubs/aep.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+<li id="icde26" data-topics="ai" data-search="dlrover-lm: llm pre-training framework with thousands of accelerators in antgroup ziling huang, zhengmao ye, qingsong cai, zelong huang, bo sang, haitao zhang, jian sha, tingfeng lan, hui lu, yuanchun zhou, mingjie tang icde 42nd ieee international conference on data engineering"><span class="venue">ICDE 2026</span><span class="title">DLRover-LM: LLM Pre-Training Framework with Thousands of Accelerators in AntGroup</span><span class="authors">Ziling Huang, Zhengmao Ye, Qingsong Cai, Zelong Huang, Bo Sang, Haitao Zhang, Jian Sha, Tingfeng Lan, <b>Hui Lu</b>, Yuanchun Zhou, Mingjie Tang</span><span class="where">42nd IEEE International Conference on Data Engineering</span></li>
+</ul></section>
+<section class="year-group" data-year="2025"><h2>2025</h2><ul class="pub-full">
+<li data-topics="memory" data-search="can hardware outsmart software in tiered memory management? a cmm-h case study zhen lin, yujie yang, lingfeng xiang, lianjie cao, faraz ahmed, jia rao, hui lu, puneet sharma systor acm international systems and storage conference"><span class="venue">SYSTOR 2025</span><a class="title" href="pubs/systor-25.pdf">Can Hardware Outsmart Software in Tiered Memory Management? A CMM-H Case Study</a><span class="authors">Zhen Lin, Yujie Yang, Lingfeng Xiang, Lianjie Cao, Faraz Ahmed, Jia Rao, <b>Hui Lu</b>, Puneet Sharma</span><span class="where">ACM International Systems and Storage Conference</span><span class="note">Acceptance rate 37.2% (16/43)</span><span class="pdf"><a href="pubs/systor-25.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+<li data-topics="virt" data-search="liteshield: secure containers via lightweight, composable userspace μkernel services kaesi manakkal, nathan daughety, marcus pendleton, hui lu usenix atc usenix annual technical conference"><span class="venue">USENIX ATC 2025</span><a class="title" href="pubs/atc25-manakkal.pdf">LiteShield: Secure Containers via Lightweight, Composable Userspace μKernel Services</a><span class="authors">Kaesi Manakkal, Nathan Daughety, Marcus Pendleton, <b>Hui Lu</b></span><span class="where">USENIX Annual Technical Conference</span><span class="note">Acceptance rate 15.8% (100/634)</span><span class="pdf"><a href="pubs/atc25-manakkal.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+<li data-topics="memory" data-search="dsa-2lm: a cpu-free tiered memory architecture with intel dsa ruili liu, teng ma, mingxing zhang, jialiang huang, yingdi shan, zheng liu, lingfeng xiang, zhen lin, hui lu, jia rao, kang chen, yongwei wu usenix atc usenix annual technical conference"><span class="venue">USENIX ATC 2025</span><a class="title" href="pubs/atc25-liu-ruili.pdf">DSA-2LM: A CPU-Free Tiered Memory Architecture with Intel DSA</a><span class="authors">Ruili Liu, Teng Ma, Mingxing Zhang, Jialiang Huang, Yingdi Shan, Zheng Liu, Lingfeng Xiang, Zhen Lin, <b>Hui Lu</b>, Jia Rao, Kang Chen, Yongwei Wu</span><span class="where">USENIX Annual Technical Conference</span><span class="note">Acceptance rate 15.8% (100/634)</span><span class="pdf"><a href="pubs/atc25-liu-ruili.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+<li id="vldb25" data-topics="ai" data-search="mlora: fine-tuning lora adapters via highly-efficient pipeline parallelism in multiple gpus zhengmao ye, dengchun li, zetao hu, tingfen lan, sha jian, sicong zheng, lei duan, jie zuo, hui lu, yuanchun zhou, mingjie tang vldb proceedings of the vldb endowment"><span class="venue">VLDB 2025</span><span class="title">mLoRA: Fine-Tuning LoRA Adapters via Highly-Efficient Pipeline Parallelism in Multiple GPUs</span><span class="authors">Zhengmao Ye, Dengchun Li, Zetao Hu, Tingfen Lan, Sha Jian, Sicong Zheng, Lei Duan, Jie Zuo, <b>Hui Lu</b>, Yuanchun Zhou, Mingjie Tang</span><span class="where">Proceedings of the VLDB Endowment</span></li>
+</ul></section>
+<section class="year-group" data-year="2024"><h2>2024</h2><ul class="pub-full">
+<li data-topics="memory" data-search="nomad: non-exclusive memory tiering via transactional page migration lingfeng xiang, zhen lin, weishu deng, hui lu, jia rao, yifan yuan, ren wang osdi usenix symposium on operating systems design and implementation"><span class="venue">OSDI 2024</span><a class="title" href="pubs/nomad.pdf">Nomad: Non-Exclusive Memory Tiering via Transactional Page Migration</a><span class="authors">Lingfeng Xiang, Zhen Lin, Weishu Deng, <b>Hui Lu</b>, Jia Rao, Yifan Yuan, Ren Wang</span><span class="where">USENIX Symposium on Operating Systems Design and Implementation</span><span class="note">Acceptance rate 17.4% (49/282)</span><span class="pdf"><a href="pubs/nomad.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+<li data-topics="ai" data-search="dlrover-rm: resource optimization for deep recommendation models training in cloud qinlong wang, tingfeng lan, yinghao tang, bo sang, ziling huang, yihen du, haitao zhang, shajian, ke zhang, hui lu, yuanchun zhou, mingjie tang vldb proceedings of the vldb endowment"><span class="venue">VLDB 2024</span><a class="title" href="pubs/p4130-tang.pdf">DLRover-RM: Resource Optimization for Deep Recommendation Models Training in Cloud</a><span class="authors">Qinlong Wang, Tingfeng Lan, Yinghao Tang, Bo Sang, Ziling Huang, Yihen Du, Haitao Zhang, Shajian, Ke Zhang, <b>Hui Lu</b>, Yuanchun Zhou, Mingjie Tang</span><span class="where">Proceedings of the VLDB Endowment</span><span class="note">Acceptance rate 20%</span><span class="pdf"><a href="pubs/p4130-tang.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+</ul></section>
+<section class="year-group" data-year="2023"><h2>2023</h2><ul class="pub-full">
+<li data-topics="virt" data-search="pvm: efficient shadow paging for deploying secure containers in cloud-native environment hang huang, jiangshan lai, jia rao, hui lu, et al. sosp acm symposium on operating systems principles"><span class="venue">SOSP 2023</span><a class="title" href="pubs/pvm.pdf">PVM: Efficient Shadow Paging for Deploying Secure Containers in Cloud-native Environment</a><span class="authors">Hang Huang, Jiangshan Lai, Jia Rao, <b>Hui Lu</b>, et al.</span><span class="where">ACM Symposium on Operating Systems Principles</span><span class="note">Acceptance rate 18.7% (43/229)</span><span class="pdf"><a href="pubs/pvm.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+<li data-topics="net memory" data-search="when caching systems meet emerging storage devices: a case study zhen lin, lianjie cao, faraz ahmed, hui lu, puneet sharma hotstorage acm workshop on hot topics in storage and file systems"><span class="venue">HotStorage 2023</span><a class="title" href="pubs/shruti.pdf">When Caching Systems Meet Emerging Storage Devices: A Case Study</a><span class="authors">Zhen Lin, Lianjie Cao, Faraz Ahmed, <b>Hui Lu</b>, Puneet Sharma</span><span class="where">ACM Workshop on Hot Topics in Storage and File Systems</span><span class="note">Acceptance rate 39.5% (17/43)</span><span class="pdf"><a href="pubs/shruti.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+<li data-topics="memory net" data-search="p2cache: exploring tiered memory for in-kernel file systems caching zhen lin, lingfeng xiang, jia rao, hui lu usenix atc usenix annual technical conference"><span class="venue">USENIX ATC 2023</span><a class="title" href="pubs/atc23-lin.pdf">P2Cache: Exploring Tiered Memory for In-Kernel File Systems Caching</a><span class="authors">Zhen Lin, Lingfeng Xiang, Jia Rao, <b>Hui Lu</b></span><span class="where">USENIX Annual Technical Conference</span><span class="note">Acceptance rate 18.4% (65/353)</span><span class="pdf"><a href="pubs/atc23-lin.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+<li data-topics="net" data-search="mflow: accelerating packet processing in container overlay networks via packet-level parallelism jiaxin lei, manish munikar, hui lu, jia rao ipdps ieee international parallel &amp; distributed processing symposium"><span class="venue">IPDPS 2023</span><a class="title" href="pubs/ipdps2023_lei.pdf">mFlow: Accelerating Packet Processing in Container Overlay Networks via Packet-level Parallelism</a><span class="authors">Jiaxin Lei, Manish Munikar, <b>Hui Lu</b>, Jia Rao</span><span class="where">IEEE International Parallel &amp; Distributed Processing Symposium</span><span class="note">Acceptance rate 25.7% (95/369)</span><span class="pdf"><a href="pubs/ipdps2023_lei.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+</ul></section>
+<section class="year-group" data-year="2022"><h2>2022</h2><ul class="pub-full">
+<li data-topics="net" data-search="prism: streamlined packet processing for containers with flow prioritization manish munikar, jiaxin lei, hui lu, jia rao icdcs ieee international conference on distributed computing systems"><span class="venue">ICDCS 2022</span><a class="title" href="pubs/ppsync3.pdf">PRISM: Streamlined Packet Processing for Containers with Flow Prioritization</a><span class="authors">Manish Munikar, Jiaxin Lei, <b>Hui Lu</b>, Jia Rao</span><span class="where">IEEE International Conference on Distributed Computing Systems</span><span class="note">Acceptance rate 19.9% (114/573)</span><span class="pdf"><a href="pubs/ppsync3.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+</ul></section>
+<section class="year-group" data-year="2021"><h2>2021</h2><ul class="pub-full">
+<li data-topics="virt" data-search="flashcube: fast provisioning of serverless functions with streamlined container runtimes zhen lin, kao-feng hsieh, yu sun, seunghee shin, hui lu plos @ sosp workshop on programming languages and operating systems"><span class="venue">PLOS @ SOSP 2021</span><a class="title" href="pubs/plos.pdf">FlashCube: Fast Provisioning of Serverless Functions with Streamlined Container Runtimes</a><span class="authors">Zhen Lin, Kao-Feng Hsieh, Yu Sun, Seunghee Shin, <b>Hui Lu</b></span><span class="where">Workshop on Programming Languages and Operating Systems</span><span class="pdf"><a href="pubs/plos.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+<li data-topics="net" data-search="parallelizing packet processing in container overlay networks jiaxin lei*, manish munikar*, kun suo*, hui lu, jia rao eurosys european conference on computer systems"><span class="venue">EuroSys 2021</span><a class="title" href="pubs/eurosys21-final134.pdf">Parallelizing Packet Processing in Container Overlay Networks</a><span class="authors">Jiaxin Lei*, Manish Munikar*, Kun Suo*, <b>Hui Lu</b>, Jia Rao</span><span class="where">European Conference on Computer Systems</span><span class="note">Acceptance rate 19.9% (38/191)</span><span class="pdf"><a href="pubs/eurosys21-final134.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+</ul></section>
+<section class="year-group" data-year="2020"><h2>2020</h2><ul class="pub-full">
+<li data-topics="net virt" data-search="baoverlay: a block-accessible overlay file system for fast and efficient container storage yu sun, jiaxin lei, seunghee shin, hui lu socc acm symposium on cloud computing"><span class="venue">SoCC 2020</span><a class="title" href="pubs/SOCC20.pdf">BAOverlay: A Block-Accessible Overlay File System for Fast and Efficient Container Storage</a><span class="authors">Yu Sun, Jiaxin Lei, Seunghee Shin, <b>Hui Lu</b></span><span class="where">ACM Symposium on Cloud Computing</span><span class="note">Acceptance rate 24% (35/143)</span><span class="pdf"><a href="pubs/SOCC20.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+<li data-topics="ai" data-search="fedmax: enabling a highly-efficient federated learning framework haohang xu, jin li, hongkai xiong, hui lu cloud ieee international conference on cloud computing"><span class="venue">CLOUD 2020</span><a class="title" href="https://ieeexplore.ieee.org/abstract/document/9284214">FedMax: Enabling a Highly-Efficient Federated Learning Framework</a><span class="authors">Haohang Xu, Jin Li, Hongkai Xiong, <b>Hui Lu</b></span><span class="where">IEEE International Conference on Cloud Computing</span><span class="note">Acceptance rate 20.7% (53/256)</span></li>
+<li data-topics="net" data-search="plasma: programmable elasticity for stateful cloud computing applications bo sang, pierre-louis roman, patrick eugster, hui lu, srivatsan ravi, gustavo petri eurosys european conference on computer systems"><span class="venue">EuroSys 2020</span><a class="title" href="pubs/plasma.pdf">PLASMA: Programmable Elasticity for Stateful Cloud Computing Applications</a><span class="authors">Bo Sang, Pierre-Louis Roman, Patrick Eugster, <b>Hui Lu</b>, Srivatsan Ravi, Gustavo Petri</span><span class="where">European Conference on Computer Systems</span><span class="note">Acceptance rate 18.4% (43/234)</span><span class="pdf"><a href="pubs/plasma.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+<li data-topics="virt net" data-search="sdn-based order-aware live migration of virtual machines dinuni fernando, ping yang, hui lu infocom ieee international conference on computer communications"><span class="venue">INFOCOM 2020</span><a class="title" href="pubs/infocom20.pdf">SDN-based Order-aware Live Migration of Virtual Machines</a><span class="authors">Dinuni Fernando, Ping Yang, <b>Hui Lu</b></span><span class="where">IEEE International Conference on Computer Communications</span><span class="note">Acceptance rate 19.8% (268/1354)</span><span class="pdf"><a href="pubs/infocom20.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+</ul></section>
+<section class="year-group" data-year="2019"><h2>2019</h2><ul class="pub-full">
+<li data-topics="net" data-search="tackling parallelization challenges of kernel network stack for container overlay networks jiaxin lei, kun suo, hui lu, jia rao hotcloud usenix workshop on hot topics in cloud computing"><span class="venue">HotCloud 2019</span><a class="title" href="pubs/hotcloud19-paper-lei.pdf">Tackling Parallelization Challenges of Kernel Network Stack for Container Overlay Networks</a><span class="authors">Jiaxin Lei, Kun Suo, <b>Hui Lu</b>, Jia Rao</span><span class="where">USENIX Workshop on Hot Topics in Cloud Computing</span><span class="note">Acceptance rate 37.3% (22/59)</span><span class="pdf"><a href="pubs/hotcloud19-paper-lei.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+<li data-topics="virt" data-search="exploring potential for non-disruptive vertical auto scaling and resource estimation in kubernetes gourav rattihalli, madhusudhan govindaraju, hui lu, devesh tiwari cloud ieee international conference on cloud computing"><span class="venue">CLOUD 2019</span><a class="title" href="https://ieeexplore.ieee.org/document/8814504">Exploring Potential for Non-Disruptive Vertical Auto Scaling and Resource Estimation in Kubernetes</a><span class="authors">Gourav Rattihalli, Madhusudhan Govindaraju, <b>Hui Lu</b>, Devesh Tiwari</span><span class="where">IEEE International Conference on Cloud Computing</span><span class="note"><span class="tag">Invited</span></span></li>
+<li data-topics="net" data-search="shadenf: testing online network functions hui lu, abhinav srivastava, yu sun ic2e ieee international conference on cloud engineering"><span class="venue">IC2E 2019</span><a class="title" href="pubs/shadenf.pdf">ShadeNF: Testing Online Network Functions</a><span class="authors"><b>Hui Lu</b>, Abhinav Srivastava, Yu Sun</span><span class="where">IEEE International Conference on Cloud Engineering</span><span class="note">Acceptance rate 26%</span><span class="pdf"><a href="pubs/shadenf.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+<li data-topics="virt" data-search="mwarp: accelerating intra-host live container migration via memory warping piush kumar sinha, spoorti doddamani, hui lu, kartik gopalan dcperf @ infocom ieee infocom workshops"><span class="venue">DCPerf @ INFOCOM 2019</span><a class="title" href="pubs/mWarp.pdf">mWarp: Accelerating Intra-Host Live Container Migration via Memory Warping</a><span class="authors">Piush Kumar Sinha, Spoorti Doddamani, <b>Hui Lu</b>, Kartik Gopalan</span><span class="where">IEEE INFOCOM Workshops</span><span class="note"><span class="tag">Invited</span></span><span class="pdf"><a href="pubs/mWarp.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+<li data-topics="virt" data-search="fast and live hypervisor replacement spoorti doddamani, piush sinha, hui lu, tsu-hsiang k cheng, hardik h bagdi, kartik gopalan vee acm sigplan/sigops conference on virtual execution environments"><span class="venue">VEE 2019</span><a class="title" href="pubs/doddamani19fast.pdf">Fast and Live Hypervisor Replacement</a><span class="authors">Spoorti Doddamani, Piush Sinha, <b>Hui Lu</b>, Tsu-Hsiang K Cheng, Hardik H Bagdi, Kartik Gopalan</span><span class="where">ACM SIGPLAN/SIGOPS Conference on Virtual Execution Environments</span><span class="pdf"><a href="pubs/doddamani19fast.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+</ul></section>
+<section class="year-group" data-year="2018"><h2>2018</h2><ul class="pub-full">
+<li data-topics="net" data-search="shadenf: a platform for online network function verification yu sun, hui lu, abhinav srivastava, cong xu socc poster poster, acm symposium on cloud computing"><span class="venue">SoCC Poster 2018</span><a class="title" href="pubs/p525-Sun.pdf">ShadeNF: A Platform for Online Network Function Verification</a><span class="authors">Yu Sun, <b>Hui Lu</b>, Abhinav Srivastava, Cong Xu</span><span class="where">Poster, ACM Symposium on Cloud Computing</span><span class="pdf"><a href="pubs/p525-Sun.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+</ul></section>
+<section class="year-group" data-year="2017"><h2>2017</h2><ul class="pub-full">
+<li data-topics="net" data-search="rethinking cloud storage system software under multi-tenancy hui lu ph.d. thesis purdue university"><span class="venue">Ph.D. Thesis 2017</span><a class="title" href="https://search.proquest.com/docview/1959307636?pq-origsite=gscholar">Rethinking Cloud Storage System Software under Multi-Tenancy</a><span class="authors"><b>Hui Lu</b></span><span class="where">Purdue University</span></li>
+</ul></section>
+<section class="year-group" data-year="2016"><h2>2016</h2><ul class="pub-full">
+<li data-topics="net" data-search="bass: improving i/o performance for cloud block storage via byte-addressable storage stack hui lu, brendan saltaformaggio, cong xu, umesh bellur, dongyan xu socc acm symposium on cloud computing"><span class="venue">SoCC 2016</span><a class="title" href="pubs/bass.pdf">BASS: Improving I/O Performance for Cloud Block Storage via Byte-Addressable Storage Stack</a><span class="authors"><b>Hui Lu</b>, Brendan Saltaformaggio, Cong Xu, Umesh Bellur, Dongyan Xu</span><span class="where">ACM Symposium on Cloud Computing</span><span class="note">Acceptance rate 25%</span><span class="pdf"><a href="pubs/bass.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+<li data-topics="net" data-search="storm: enabling tenant-defined cloud storage middle-box services hui lu, abhinav srivastava, brendan saltaformaggio, dongyan xu dsn ieee/ifip international conference on dependable systems and networks"><span class="venue">DSN 2016</span><a class="title" href="pubs/storm_dsn.pdf">StorM: Enabling Tenant-Defined Cloud Storage Middle-Box Services</a><span class="authors"><b>Hui Lu</b>, Abhinav Srivastava, Brendan Saltaformaggio, Dongyan Xu</span><span class="where">IEEE/IFIP International Conference on Dependable Systems and Networks</span><span class="note">Acceptance rate 22.3%</span><span class="pdf"><a href="pubs/storm_dsn.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+</ul></section>
+<section class="year-group" data-year="2015"><h2>2015</h2><ul class="pub-full">
+<li data-topics="net" data-search="vfair: latency-aware fair storage scheduling via per-io cost-based differentiation hui lu, brendan saltaformaggio, ramana kompella, dongyan xu socc acm symposium on cloud computing"><span class="venue">SoCC 2015</span><a class="title" href="pubs/vfair.pdf">vFair: Latency-Aware Fair Storage Scheduling via Per-IO Cost-Based Differentiation</a><span class="authors"><b>Hui Lu</b>, Brendan Saltaformaggio, Ramana Kompella, Dongyan Xu</span><span class="where">ACM Symposium on Cloud Computing</span><span class="note">Acceptance rate 21.6%</span><span class="pdf"><a href="pubs/vfair.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+<li data-topics="virt" data-search="vhaul: towards optimal scheduling of live multi-vm migration for multi-tier applications hui lu, cong xu, cheng cheng, ramana kompella, dongyan xu cloud ieee international conference on cloud computing"><span class="venue">CLOUD 2015</span><a class="title" href="pubs/vhaul.pdf">vHaul: Towards Optimal Scheduling of Live Multi-VM Migration for Multi-tier Applications</a><span class="authors"><b>Hui Lu</b>, Cong Xu, Cheng Cheng, Ramana Kompella, Dongyan Xu</span><span class="where">IEEE International Conference on Cloud Computing</span><span class="note">Acceptance rate 14%</span><span class="pdf"><a href="pubs/vhaul.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+</ul></section>
+<section class="year-group" data-year="2013"><h2>2013</h2><ul class="pub-full">
+<li data-topics="net" data-search="hybnet: network manager for a hybrid network infrastructure hui lu, nipun arora, hui zhang, cristian lumezanu, junghwan rhee, guofei jiang middleware acm/ifip/usenix international middleware conference (industry track)"><span class="venue">Middleware 2013</span><a class="title" href="pubs/hybnet.pdf">Hybnet: Network Manager for a Hybrid Network Infrastructure</a><span class="authors"><b>Hui Lu</b>, Nipun Arora, Hui Zhang, Cristian Lumezanu, Junghwan Rhee, Guofei Jiang</span><span class="where">ACM/IFIP/USENIX International Middleware Conference (Industry Track)</span><span class="note">Acceptance rate 22.7%</span><span class="pdf"><a href="pubs/hybnet.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+<li data-topics="virt" data-search="vturbo: accelerating virtual machine i/o processing using designated turbo-sliced core cong xu, sahan gamage, hui lu, ramana kompella, dongyan xu usenix atc usenix annual technical conference"><span class="venue">USENIX ATC 2013</span><a class="title" href="pubs/vturbo.pdf">vTurbo: Accelerating Virtual Machine I/O Processing Using Designated Turbo-Sliced Core</a><span class="authors">Cong Xu, Sahan Gamage, <b>Hui Lu</b>, Ramana Kompella, Dongyan Xu</span><span class="where">USENIX Annual Technical Conference</span><span class="note">Acceptance rate 14.2%</span><span class="pdf"><a href="pubs/vturbo.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+</ul></section>
+<section class="year-group" data-year="2012"><h2>2012</h2><ul class="pub-full">
+<li data-topics="virt" data-search="virtualization challenges: a view from server consolidation perspective hui lu, yaozu dong, jiangang duan, kevin tian vee acm sigplan/sigops conference on virtual execution environments"><span class="venue">VEE 2012</span><a class="title" href="pubs/vee12.pdf">Virtualization Challenges: A View from Server Consolidation Perspective</a><span class="authors"><b>Hui Lu</b>, Yaozu Dong, Jiangang Duan, Kevin Tian</span><span class="where">ACM SIGPLAN/SIGOPS Conference on Virtual Execution Environments</span><span class="note">Acceptance rate 37.7%</span><span class="pdf"><a href="pubs/vee12.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> PDF</a></span></li>
+</ul></section>
+<section class="year-group" data-year="2010"><h2>2010</h2><ul class="pub-full">
+<li data-topics="virt" data-search="tackling the challenges of server consolidation on multi-core systems hui lu, xudong zheng, zhiteng huang, jiangang duan iiswc ieee international symposium on workload characterization"><span class="venue">IISWC 2010</span><a class="title" href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&amp;arnumber=5654398">Tackling the Challenges of Server Consolidation on Multi-core Systems</a><span class="authors"><b>Hui Lu</b>, Xudong Zheng, Zhiteng Huang, Jiangang Duan</span><span class="where">IEEE International Symposium on Workload Characterization</span><span class="note">Acceptance rate 37.5%</span></li>
+<li data-topics="early" data-search="subgraphs matching-based side information generation for distributed multiview video coding hongkai xiong, hui lu, yongsheng zhang, li song, zhihai he, tsuhan chen eurasip jasp eurasip journal on advances in signal processing"><span class="venue">EURASIP JASP 2010</span><a class="title" href="http://link.springer.com/article/10.1155/2009/386795">Subgraphs Matching-based Side Information Generation for Distributed Multiview Video Coding</a><span class="authors">Hongkai Xiong, <b>Hui Lu</b>, Yongsheng Zhang, Li Song, Zhihai He, Tsuhan Chen</span><span class="where">EURASIP Journal on Advances in Signal Processing</span></li>
+</ul></section>
+<section class="year-group" data-year="2009"><h2>2009</h2><ul class="pub-full">
+<li data-topics="early" data-search="graph matching based side information generation for distributed multi-view video coding hui lu, hongkai xiong, li song, zhihai he, tsuhan chen icc ieee international conference on communications"><span class="venue">ICC 2009</span><a class="title" href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&amp;arnumber=5199048">Graph Matching Based Side Information Generation for Distributed Multi-view Video Coding</a><span class="authors"><b>Hui Lu</b>, Hongkai Xiong, Li Song, Zhihai He, Tsuhan Chen</span><span class="where">IEEE International Conference on Communications</span></li>
+</ul></section>
+<section class="year-group" data-year="2008"><h2>2008</h2><ul class="pub-full">
+<li data-topics="early" data-search="side information generation with constrained relaxation for distributed multi-view video coding hui lu, hongkai xiong, yongsheng zhang, zhihai he iscas ieee international symposium on circuits and systems"><span class="venue">ISCAS 2008</span><a class="title" href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&amp;arnumber=4542201">Side Information Generation with Constrained Relaxation for Distributed Multi-view Video Coding</a><span class="authors"><b>Hui Lu</b>, Hongkai Xiong, Yongsheng Zhang, Zhihai He</span><span class="where">IEEE International Symposium on Circuits and Systems</span></li>
+</ul></section>
+<section class="year-group" data-year="2007"><h2>2007</h2><ul class="pub-full">
+<li data-topics="early" data-search="a source-driven error recovery scheme using wyner-ziv coding yongsheng zhang, hongkai xiong, songu yu, hui lu icme ieee international conference on multimedia and expo"><span class="venue">ICME 2007</span><a class="title" href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&amp;arnumber=4284609">A Source-Driven Error Recovery Scheme using Wyner-Ziv Coding</a><span class="authors">Yongsheng Zhang, Hongkai Xiong, Songu Yu, <b>Hui Lu</b></span><span class="where">IEEE International Conference on Multimedia and Expo</span></li>
+</ul></section>
+  </div>
+  <p class="empty" id="pub-empty" hidden>No publications match.</p>
 </main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span id="year"></span> Hui Lu · Computer Science and Engineering, The University of Texas at Arlington</span>
+    <span><a href="mailto:hui.lu@uta.edu">hui.lu@uta.edu</a></span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  document.querySelector('.theme-toggle').addEventListener('click', function () {
+    var root = document.documentElement;
+    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var current = root.getAttribute('data-theme') || (prefersDark ? 'dark' : 'light');
+    var next = current === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+
+  var toggle = document.querySelector('.nav-toggle');
+  var links = document.getElementById('nav-links');
+  function setOpen(open) { toggle.setAttribute('aria-expanded', String(open)); links.dataset.open = String(open); }
+  toggle.addEventListener('click', function () { setOpen(toggle.getAttribute('aria-expanded') !== 'true'); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
+
+  // Filtering + search
+  var topic = 'all';
+  var search = document.getElementById('pub-search');
+  var chips = document.querySelectorAll('.chip');
+  var items = document.querySelectorAll('.pub-full li');
+  var groups = document.querySelectorAll('.year-group');
+  var count = document.getElementById('pub-count');
+  var empty = document.getElementById('pub-empty');
+
+  function apply() {
+    var q = search.value.trim().toLowerCase();
+    var shown = 0;
+    items.forEach(function (li) {
+      var okTopic = topic === 'all' || (' ' + li.dataset.topics + ' ').indexOf(' ' + topic + ' ') !== -1;
+      var okSearch = !q || li.dataset.search.indexOf(q) !== -1;
+      var show = okTopic && okSearch;
+      li.hidden = !show;
+      if (show) shown++;
+    });
+    groups.forEach(function (g) {
+      g.hidden = !g.querySelector('li:not([hidden])');
+    });
+    count.textContent = shown + ' of ' + items.length;
+    empty.hidden = shown !== 0;
+  }
+  chips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      topic = c.dataset.topic;
+      chips.forEach(function (x) { x.setAttribute('aria-pressed', String(x === c)); });
+      apply();
+    });
+  });
+  search.addEventListener('input', apply);
+  apply();
+</script>
 </body>
 </html>
