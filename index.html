@@ -34,6 +34,7 @@
       <a href="#funding">Funding</a>
       <a href="#teaching">Teaching</a>
       <a href="#students">Students</a>
+      <a href="#service">Service</a>
     </nav>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
       <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
@@ -46,7 +47,7 @@
 
   <!-- ================= Sidebar ================= -->
   <aside class="sidebar">
-    <img class="profile-photo" src="assets/huilu.jpg" srcset="assets/huilu.jpg 640w, assets/huilu@2x.jpg 1280w" sizes="(max-width: 900px) 150px, 280px" alt="Portrait of Hui Lu" width="640" height="640">
+    <img class="profile-photo" src="assets/huilu.jpg" srcset="assets/huilu.jpg 640w, assets/huilu@2x.jpg 1280w" sizes="(max-width: 900px) 150px, 280px" alt="Portrait of Hui Lu" width="640" height="640" title="Click to enlarge" data-full="assets/huilu-full.jpg">
     <h1 class="profile-name">Hui Lu</h1>
     <p class="profile-role">Associate Professor<br>Computer Science and Engineering<br><a href="https://www.uta.edu/">The University of Texas at Arlington</a></p>
     <ul class="profile-tags" aria-label="Research areas">
@@ -131,6 +132,7 @@
     <section id="publications">
       <div class="section-head"><h2>Selected Publications</h2><a class="more" href="pub.html">View full list</a></div>
       <ul class="pub-list">
+        <li><span class="venue">NeurIPS 2026</span><span><a class="title" href="pub.html#neurips26">SPIRIT: Speed-Driven Online Adaptation for Self-Speculative Decoding</a><span class="soon">to appear</span></span></li>
         <li><span class="venue">ATC 2026</span><span><a class="title" href="pub.html#atc26">Courier: Host-Transparent Direct Network I/O for Secure Containers in Cloud VMs</a><span class="soon">to appear</span></span></li>
         <li><span class="venue">SC 2026</span><span><a class="title" href="pub.html#sc26">Quantifying the Cost of Software-Managed Synchronization on Multi-Host CXL Memory</a><span class="soon">to appear</span></span></li>
         <li><span class="venue">OSDI 2026</span><a class="title" href="pubs/osdi26-manakkal.pdf">vBOIDs: Taming Chaos via Coarse-grained Scheduling Abstraction for Containers</a></li>
@@ -191,8 +193,33 @@
       </ul>
     </section>
 
+
+    <section id="service">
+      <div class="section-head"><h2>Service</h2><a class="more" href="HuiLu_CV.pdf">Full list in CV</a></div>
+      <h3>Program Committee Member</h3>
+      <ul class="service-list">
+        <li class="service"><span class="name">24th USENIX Conference on File and Storage Technologies <span class="abbr">(FAST)</span></span><span class="years">2027</span></li>
+        <li class="service"><span class="name">Workshop on Programming Languages and Operating Systems <span class="abbr">(PLOS)</span></span><span class="years">2021, 2023, 2025, 2026</span></li>
+        <li class="service"><span class="name">IEEE Cloud Summit</span><span class="years">2024 – 2026</span></li>
+        <li class="service"><span class="name">IEEE International Conference on High Performance Computing, Data, and Analytics <span class="abbr">(HiPC)</span></span><span class="years">2024</span></li>
+        <li class="service"><span class="name">International Conference on Parallel Processing <span class="abbr">(ICPP)</span></span><span class="years">2024</span></li>
+        <li class="service"><span class="name">IEEE International Conference on Distributed Computing Systems <span class="abbr">(ICDCS)</span></span><span class="years">2022 – 2024</span></li>
+        <li class="service"><span class="name">IEEE International Parallel &amp; Distributed Processing Symposium <span class="abbr">(IPDPS)</span></span><span class="years">2023</span></li>
+        <li class="service"><span class="name">International Conference on Cloud Computing, GRIDs, and Virtualization <span class="abbr">(CLOUD&nbsp;COMPUTING)</span></span><span class="years">2020 – 2022</span></li>
+        <li class="service"><span class="name">IEEE International Conference on Cloud Computing <span class="abbr">(CLOUD)</span></span><span class="years">2018 – 2021</span></li>
+        <li class="service"><span class="name">International Conference on Networking, Architecture, and Storage <span class="abbr">(NAS)</span></span><span class="years">2018</span></li>
+        <li class="service"><span class="name">International Conference on Big Data Computing and Communications <span class="abbr">(BIGCOM)</span></span><span class="years">2019</span></li>
+        <li class="service"><span class="name">International Conference on Computer Communications and Networks <span class="abbr">(ICCCN)</span></span><span class="years">2018, 2019</span></li>
+      </ul>
+    </section>
+
   </div>
 </main>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Enlarged portrait">
+  <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+  <img src="" alt="Portrait of Hui Lu">
+</div>
 
 <footer class="site-footer">
   <div class="wrap">
@@ -214,6 +241,16 @@
     root.setAttribute('data-theme', next);
     try { localStorage.setItem('theme', next); } catch (e) {}
   });
+
+  // Photo lightbox: click the portrait to enlarge
+  var photo = document.querySelector('.profile-photo');
+  var lightbox = document.getElementById('lightbox');
+  var lightboxImg = lightbox.querySelector('img');
+  function openLightbox() { lightboxImg.src = photo.dataset.full; lightbox.hidden = false; document.body.style.overflow = 'hidden'; }
+  function closeLightbox() { lightbox.hidden = true; document.body.style.overflow = ''; }
+  photo.addEventListener('click', openLightbox);
+  lightbox.addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLightbox(); });
 
   // Mobile menu
   var toggle = document.querySelector('.nav-toggle');
