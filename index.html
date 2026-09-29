@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260929b">
   <script>
     // Apply a saved theme before first paint to avoid a flash.
     try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
@@ -130,7 +130,7 @@
     </section>
 
     <section id="publications">
-      <div class="section-head"><h2>Recent Publications</h2><a class="more" href="pub.html">View full list</a></div>
+      <div class="section-head"><h2>Selected Publications</h2><a class="more" href="pub.html">View full list</a></div>
       <ul class="pub-list">
         <li><span class="venue">NeurIPS 2026</span><span><a class="title" href="pub.html#neurips26">SPIRIT: Speed-Driven Online Adaptation for Self-Speculative Decoding</a><span class="soon">to appear</span></span></li>
         <li><span class="venue">ATC 2026</span><span><a class="title" href="pub.html#atc26">Courier: Host-Transparent Direct Network I/O for Secure Containers in Cloud VMs</a><span class="soon">to appear</span></span></li>
@@ -169,9 +169,9 @@
     <section id="teaching">
       <div class="section-head"><h2>Teaching</h2></div>
       <div class="course-list">
-        <div class="course"><span class="code">CSE 3320</span><div><div class="name">Operating Systems</div><div class="terms">Fall 2025 · Fall 2024 · Fall 2023</div></div></div>
-        <div class="course"><span class="code">CSE 5359 / 6359</span><div><div class="name">Advanced Topics in Systems &amp; Architecture</div><div class="terms">Fall 2026 · Fall 2025 · Fall 2024</div></div></div>
-        <div class="course"><span class="code">CSE 4372 / 5372</span><div><div class="name">RISC Processor Design</div><div class="terms">Spring 2024</div></div></div>
+        <div class="course"><span class="code">CSE 3320</span><span class="name">Operating Systems</span><span class="terms">Fall 2025 · Fall 2024 · Fall 2023</span></div>
+        <div class="course"><span class="code">CSE 5359 / 6359</span><span class="name">Advanced Topics in Systems &amp; Architecture</span><span class="terms">Fall 2026 · Fall 2025 · Fall 2024</span></div>
+        <div class="course"><span class="code">CSE 4372 / 5372</span><span class="name">RISC Processor Design</span><span class="terms">Spring 2024</span></div>
       </div>
     </section>
 
@@ -221,16 +221,8 @@
   <img src="" alt="Portrait of Hui Lu">
 </div>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <span>© <span id="year"></span> Hui Lu · Computer Science and Engineering, The University of Texas at Arlington</span>
-    <span><a href="mailto:hui.lu@uta.edu">hui.lu@uta.edu</a></span>
-  </div>
-</footer>
 
 <script>
-  // Footer year
-  document.getElementById('year').textContent = new Date().getFullYear();
 
   // Dark-mode toggle (persists in localStorage; falls back to OS preference)
   document.querySelector('.theme-toggle').addEventListener('click', function () {

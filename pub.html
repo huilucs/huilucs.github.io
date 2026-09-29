@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260929b">
   <script>
     try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
   </script>
@@ -135,15 +135,8 @@
   <p class="empty" id="pub-empty" hidden>No publications match.</p>
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <span>© <span id="year"></span> Hui Lu · Computer Science and Engineering, The University of Texas at Arlington</span>
-    <span><a href="mailto:hui.lu@uta.edu">hui.lu@uta.edu</a></span>
-  </div>
-</footer>
 
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
 
   document.querySelector('.theme-toggle').addEventListener('click', function () {
     var root = document.documentElement;

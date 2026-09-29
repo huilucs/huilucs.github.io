@@ -147,7 +147,7 @@ strong { font-weight: 600; }
   display: grid;
   grid-template-columns: var(--sidebar) minmax(0, 1fr);
   gap: 56px;
-  padding: 44px 0 64px;
+  padding: 44px 0 80px;
 }
 .sidebar { position: sticky; top: calc(var(--nav-h) + 28px); align-self: start; }
 
@@ -254,11 +254,11 @@ strong { font-weight: 600; }
 
 /* Teaching */
 .course-list { display: grid; gap: 10px; }
-.course { display: grid; grid-template-columns: 132px minmax(0, 1fr); gap: 14px; padding: 12px 0; border-top: 1px solid var(--border); }
+.course { display: grid; grid-template-columns: 132px minmax(0, 1fr) auto; gap: 14px; align-items: baseline; padding: 12px 0; border-top: 1px solid var(--border); }
 .course:last-child { border-bottom: 1px solid var(--border); }
 .course .code { font-family: var(--font-mono); font-size: .84rem; font-weight: 600; color: var(--accent); }
 .course .name { font-weight: 500; }
-.course .terms { font-size: .86rem; color: var(--text-3); margin-top: 2px; }
+.course .terms { font-family: var(--font-mono); font-size: .8rem; color: var(--text-2); white-space: nowrap; text-align: right; }
 
 /* Students */
 .people-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; }
@@ -292,11 +292,6 @@ strong { font-weight: 600; }
 }
 .lightbox-close:hover { background: rgba(255,255,255,.22); }
 @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
-
-/* Footer */
-.site-footer { border-top: 1px solid var(--border); padding: 24px 0 40px; font-size: .85rem; color: var(--text-3); }
-.site-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 20px; }
-.site-footer a { color: var(--text-2); }
 
 /* --------------------------------------------------------------------------
    Publications page
@@ -381,6 +376,7 @@ strong { font-weight: 600; }
   .grant { grid-template-columns: 1fr; }
   .grant .years { grid-column: 1; grid-row: auto; }
   .course { grid-template-columns: 1fr; gap: 2px; }
+  .course .terms { text-align: left; white-space: normal; }
   .service { grid-template-columns: 1fr; gap: 2px; }
   .section-head { flex-direction: column; align-items: flex-start; gap: 4px; }
   .content > section + section { margin-top: 48px; }
