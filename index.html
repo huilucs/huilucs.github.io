@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260929b">
+  <link rel="stylesheet" href="style.css?v=20261002d">
   <script>
     // Apply a saved theme before first paint to avoid a flash.
     try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
@@ -23,7 +23,9 @@
 
 <header class="site-nav">
   <div class="wrap">
-    <a class="brand" href="index.html">Hui Lu</a>
+    <a class="brand" href="index.html" aria-label="Home" title="Home">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 11.5 12 4l8.5 7.5"/><path d="M5.5 10v9.5a1 1 0 0 0 1 1h3.75V15a1.75 1.75 0 0 1 3.5 0v5.5h3.75a1 1 0 0 0 1-1V10"/></svg>
+    </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
@@ -47,7 +49,7 @@
 
   <!-- ================= Sidebar ================= -->
   <aside class="sidebar">
-    <img class="profile-photo" src="assets/huilu.jpg" srcset="assets/huilu.jpg 640w, assets/huilu@2x.jpg 1280w" sizes="(max-width: 900px) 150px, 280px" alt="Portrait of Hui Lu" width="640" height="640" title="Click to enlarge" data-full="assets/huilu-full.jpg">
+    <img class="profile-photo" src="assets/huilu.jpg" srcset="assets/huilu.jpg 640w, assets/huilu@2x.jpg 1280w" sizes="(max-width: 900px) 150px, 280px" alt="Portrait of Hui Lu" width="640" height="640">
     <h1 class="profile-name">Hui Lu</h1>
     <p class="profile-role">Associate Professor<br>Computer Science and Engineering<br><a href="https://www.uta.edu/">The University of Texas at Arlington</a></p>
     <ul class="profile-tags" aria-label="Research areas">
@@ -216,11 +218,6 @@
   </div>
 </main>
 
-<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Enlarged portrait">
-  <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
-  <img src="" alt="Portrait of Hui Lu">
-</div>
-
 
 <script>
 
@@ -233,16 +230,6 @@
     root.setAttribute('data-theme', next);
     try { localStorage.setItem('theme', next); } catch (e) {}
   });
-
-  // Photo lightbox: click the portrait to enlarge
-  var photo = document.querySelector('.profile-photo');
-  var lightbox = document.getElementById('lightbox');
-  var lightboxImg = lightbox.querySelector('img');
-  function openLightbox() { lightboxImg.src = photo.dataset.full; lightbox.hidden = false; document.body.style.overflow = 'hidden'; }
-  function closeLightbox() { lightbox.hidden = true; document.body.style.overflow = ''; }
-  photo.addEventListener('click', openLightbox);
-  lightbox.addEventListener('click', closeLightbox);
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLightbox(); });
 
   // Mobile menu
   var toggle = document.querySelector('.nav-toggle');
