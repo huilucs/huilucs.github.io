@@ -31,12 +31,10 @@
     </button>
     <nav class="nav-links" id="nav-links" aria-label="Main navigation">
       <a href="#about">About</a>
-      <a href="#research">Research</a>
       <a href="#publications">Publications</a>
       <a href="#funding">Funding</a>
       <a href="#teaching">Teaching</a>
       <a href="#students">Students</a>
-      <a href="#service">Service</a>
     </nav>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
       <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
@@ -76,63 +74,12 @@
       <div class="section-head"><h2>About</h2></div>
       <p class="lede">I am an Associate Professor of Computer Science and Engineering at the University of Texas at Arlington (UTA). Before joining UTA, I was an Assistant Professor at the State University of New York (SUNY) at Binghamton. I received my Ph.D. from Purdue University, where I conducted research in the FRIENDS Lab under the direction of Professor <a href="https://www.cs.purdue.edu/homes/dxu/">Dongyan Xu</a>. I am the recipient of an <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2237966">NSF CAREER Award</a> (2023).</p>
       <div class="prose">
-        <p>My research focuses on making cloud and AI infrastructure faster, safer, and more efficient. I am particularly interested in practical tensions that arise in real systems: how to isolate workloads without giving up performance, how to move data across memory tiers and hosts without disrupting applications, and how to make better use of increasingly heterogeneous hardware. These questions have shaped my work on lightweight secure containers and virtualization, transparent memory tiering across DRAM, CXL, and accelerators, high-throughput networking and storage for cloud workloads, and systems support for large-scale LLM training and inference. Much of this work is motivated by real deployment needs and carried out in collaboration with industry partners. The results have appeared at venues including OSDI, SOSP, EuroSys, and USENIX ATC.</p>
-      </div>
-    </section>
-
-    <section id="research">
-      <div class="section-head"><h2>Research</h2><a class="more" href="pub.html">All publications</a></div>
-      <div class="theme-grid">
-
-        <article class="theme-card">
-          <h3>Tiered Memory &amp; CXL</h3>
-          <p>Transparent page migration, hardware-assisted tiering, and the cost of sharing memory across hosts.</p>
-          <ul>
-            <li><span class="venue">SC 26</span><a href="pub.html#sc26">Multi-host CXL synchronization</a></li>
-            <li><span class="venue">ATC 25</span><a href="pubs/atc25-liu-ruili.pdf">DSA-2LM</a></li>
-            <li><span class="venue">OSDI 24</span><a href="pubs/nomad.pdf">Nomad</a></li>
-            <li><span class="venue">ATC 23</span><a href="pubs/atc23-lin.pdf">p2Cache</a></li>
-          </ul>
-        </article>
-
-        <article class="theme-card">
-          <h3>Secure Containers &amp; Virtualization</h3>
-          <p>Lightweight isolation for cloud-native workloads: shadow paging, nested virtualization, userspace μkernel services, and scheduling.</p>
-          <ul>
-            <li><span class="venue">OSDI 26</span><a href="pubs/osdi26-janus.pdf">JANUS</a></li>
-            <li><span class="venue">OSDI 26</span><a href="pubs/osdi26-manakkal.pdf">vBOIDs</a></li>
-            <li><span class="venue">ATC 25</span><a href="pubs/atc25-manakkal.pdf">LiteShield</a></li>
-            <li><span class="venue">SOSP 23</span><a href="pubs/pvm.pdf">PVM</a></li>
-          </ul>
-        </article>
-
-        <article class="theme-card">
-          <h3>Cloud Networking &amp; Storage</h3>
-          <p>Fast packet processing for container overlay networks, container storage, and elasticity for stateful cloud applications.</p>
-          <ul>
-            <li><span class="venue">ICDCS 22</span><a href="pubs/ppsync3.pdf">PRISM</a></li>
-            <li><span class="venue">EuroSys 21</span><a href="pubs/eurosys21-final134.pdf">Parallel packet processing</a></li>
-            <li><span class="venue">SoCC 20</span><a href="pubs/SOCC20.pdf">BAOverlay</a></li>
-            <li><span class="venue">EuroSys 20</span><a href="pubs/plasma.pdf">PLASMA</a></li>
-          </ul>
-        </article>
-
-        <article class="theme-card">
-          <h3>Systems for AI</h3>
-          <p>Scaling LLM training and inference beyond GPUs, efficient fine-tuning, and resource optimization for large-scale model training in the cloud.</p>
-          <ul>
-            <li><span class="venue">HPDC 26</span><a href="pubs/hpdc2026.pdf">Attention beyond GPUs</a></li>
-            <li><span class="venue">ICDE 26</span><a href="pub.html#icde26">DLRover-LM</a></li>
-            <li><span class="venue">VLDB 25</span><a href="pub.html#vldb25">mLoRA</a></li>
-            <li><span class="venue">VLDB 24</span><a href="pubs/p4130-tang.pdf">DLRover-RM</a></li>
-          </ul>
-        </article>
-
+        <p>My research focuses on making cloud and AI infrastructure faster, safer, and more efficient. I am particularly interested in practical tensions that arise in real systems: how to isolate workloads without giving up performance, how to move data across memory tiers and hosts without disrupting applications, and how to make better use of increasingly heterogeneous hardware. These questions have shaped my work on lightweight secure containers and virtualization, transparent memory tiering across DRAM, CXL, and accelerators, high-throughput networking and storage for cloud workloads, and systems support for large-scale LLM training and inference. Much of this work is motivated by real deployment needs and carried out in collaboration with industry partners. </p>
       </div>
     </section>
 
     <section id="publications">
-      <div class="section-head"><h2>Selected Publications</h2><a class="more" href="pub.html">View full list</a></div>
+      <div class="section-head"><h2>Selected/recent Publications</h2><a class="more" href="pub.html">View full list</a></div>
       <ul class="pub-list">
         <li><span class="venue">NeurIPS 2026</span><span><a class="title" href="pub.html#neurips26">SPIRIT: Speed-Driven Online Adaptation for Self-Speculative Decoding</a><span class="soon">to appear</span></span></li>
         <li><span class="venue">ATC 2026</span><span><a class="title" href="pub.html#atc26">Courier: Host-Transparent Direct Network I/O for Secure Containers in Cloud VMs</a><span class="soon">to appear</span></span></li>
@@ -192,26 +139,6 @@
         <li class="person alum"><span class="avatar" aria-hidden="true">YS</span><div><div class="name">Yu Sun</div><div class="meta">Ph.D. 2025</div></div></li>
         <li class="person alum"><span class="avatar" aria-hidden="true">ZL</span><div><div class="name"><a href="https://www.linkedin.com/in/lin-zhen/">Zhen Lin</a></div><div class="meta">Ph.D. 2025 · Software Engineer, ByteDance</div></div></li>
         <li class="person alum"><span class="avatar" aria-hidden="true">JL</span><div><div class="name"><a href="https://www.kean.edu/directory/jiaxin-lei-0">Jiaxin Lei</a></div><div class="meta">Ph.D. 2024 · Assistant Professor, Kean University</div></div></li>
-      </ul>
-    </section>
-
-
-    <section id="service">
-      <div class="section-head"><h2>Service</h2><a class="more" href="HuiLu_CV.pdf">Full list in CV</a></div>
-      <h3>Program Committee Member</h3>
-      <ul class="service-list">
-        <li class="service"><span class="name">24th USENIX Conference on File and Storage Technologies <span class="abbr">(FAST)</span></span><span class="years">2027</span></li>
-        <li class="service"><span class="name">Workshop on Programming Languages and Operating Systems <span class="abbr">(PLOS)</span></span><span class="years">2021, 2023, 2025, 2026</span></li>
-        <li class="service"><span class="name">IEEE Cloud Summit</span><span class="years">2024 – 2026</span></li>
-        <li class="service"><span class="name">IEEE International Conference on High Performance Computing, Data, and Analytics <span class="abbr">(HiPC)</span></span><span class="years">2024</span></li>
-        <li class="service"><span class="name">International Conference on Parallel Processing <span class="abbr">(ICPP)</span></span><span class="years">2024</span></li>
-        <li class="service"><span class="name">IEEE International Conference on Distributed Computing Systems <span class="abbr">(ICDCS)</span></span><span class="years">2022 – 2024</span></li>
-        <li class="service"><span class="name">IEEE International Parallel &amp; Distributed Processing Symposium <span class="abbr">(IPDPS)</span></span><span class="years">2023</span></li>
-        <li class="service"><span class="name">International Conference on Cloud Computing, GRIDs, and Virtualization <span class="abbr">(CLOUD&nbsp;COMPUTING)</span></span><span class="years">2020 – 2022</span></li>
-        <li class="service"><span class="name">IEEE International Conference on Cloud Computing <span class="abbr">(CLOUD)</span></span><span class="years">2018 – 2021</span></li>
-        <li class="service"><span class="name">International Conference on Networking, Architecture, and Storage <span class="abbr">(NAS)</span></span><span class="years">2018</span></li>
-        <li class="service"><span class="name">International Conference on Big Data Computing and Communications <span class="abbr">(BIGCOM)</span></span><span class="years">2019</span></li>
-        <li class="service"><span class="name">International Conference on Computer Communications and Networks <span class="abbr">(ICCCN)</span></span><span class="years">2018, 2019</span></li>
       </ul>
     </section>
 
