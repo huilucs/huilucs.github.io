@@ -6,7 +6,7 @@
   <meta name="description" content="Hui Lu, Associate Professor at UT Arlington. Research in operating systems, cloud computing, memory and storage, and AI infrastructure.">
   <meta name="color-scheme" content="light">
   <title>Hui Lu's Homepage</title>
-  <link rel="stylesheet" href="custom.css?v=profile-spacing">
+  <link rel="stylesheet" href="custom.css?v=compact-icon-nav">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -16,16 +16,39 @@
       <img src="huilu-profile.jpg" alt="Hui Lu" width="150" height="160" fetchpriority="high">
       <div class="profile-details">
         <h1><a href="index.html">Hui Lu</a></h1>
-        <p>Associate Professor<br>
+        <p class="profile-affiliation">Associate Professor<br>
           Computer Science and Engineering<br>
           <a href="https://www.uta.edu/">The University of Texas at Arlington</a>
         </p>
-        <p class="profile-links">
-          <span>Email: <a href="mailto:hui.lu@uta.edu">hui.lu@uta.edu</a></span>
-          <a href="HuiLu__CV.pdf">Curriculum vitae</a>
-          <a href="https://scholar.google.co.uk/citations?user=UidAu3IAAAAJ&amp;hl=en">Google Scholar</a>
-          <a href="https://www.linkedin.com/in/hui-lu-138b4456">LinkedIn</a>
-        </p>
+        <nav class="profile-links" aria-label="Contact and professional profiles">
+          <!-- Icon sources and licenses: assets/icon-licenses.txt. -->
+          <a class="profile-icon" href="mailto:hui.lu@uta.edu" aria-label="Email Hui Lu at hui.lu@uta.edu" title="Email: hui.lu@uta.edu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+          </a>
+          <a class="profile-icon" href="HuiLu__CV.pdf" aria-label="Curriculum vitae (PDF)" title="Curriculum vitae (PDF)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+              <path d="M15 18a3 3 0 1 0-6 0" />
+              <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z" />
+              <circle cx="12" cy="13" r="2" />
+            </svg>
+          </a>
+          <a class="profile-icon" href="https://scholar.google.co.uk/citations?user=UidAu3IAAAAJ&amp;hl=en" aria-label="Google Scholar" title="Google Scholar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+              <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z" />
+            </svg>
+          </a>
+          <a class="profile-icon" href="https://www.linkedin.com/in/hui-lu-138b4456" aria-label="LinkedIn" title="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect width="4" height="12" x="2" y="9" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+        </nav>
         <nav class="section-nav" aria-label="Homepage sections">
           <a href="#publications">Publications</a>
           <a href="#funding">Funding</a>
@@ -37,7 +60,7 @@
 
     <section class="content-section biography" id="about" aria-label="About and research">
       <p>I am an Associate Professor of Computer Science and Engineering at the University of Texas at Arlington. Before joining UTA, I was an Assistant Professor at the State University of New York at Binghamton. I received my Ph.D. from Purdue University, where I worked in the <a href="https://friends.cs.purdue.edu/">FRIENDS Lab</a> under the direction of Professor <a href="https://www.cs.purdue.edu/homes/dxu/">Dongyan Xu</a>.</p>
-      <p id="research">My research focuses on making cloud and AI infrastructure faster, safer, and more efficient. My interests span operating systems, systems virtualization, memory and storage systems, and computer networks. Recent work explores lightweight secure containers, transparent memory tiering across DRAM, CXL, and accelerators, high-throughput networking, and systems support for large-scale model training and inference. I am the recipient of an <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2237966">NSF CAREER Award</a> (2023). Much of my work is motivated by real deployment needs and carried out in collaboration with industry partners.</p>
+      <p id="research">My research focuses on making cloud and AI infrastructure faster, safer, and more efficient. My interests span operating systems, systems virtualization, memory and storage systems, and computer networks. Recent work explores lightweight secure containers, transparent memory tiering across DRAM, CXL, and accelerators, high-throughput networking, and systems support for large-scale model training and inference. Much of my work is motivated by real deployment needs and carried out in collaboration with industry partners. I am the recipient of an <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2237966">NSF CAREER Award</a> (2023).</p>
       <p>Prospective students: Motivated students interested in systems research are welcome to contact me at <a href="mailto:hui.lu@uta.edu">hui.lu@uta.edu</a>.</p>
     </section>
 
@@ -46,7 +69,7 @@
       <ul class="publication-list selected-publications">
       <li class="publication">
         <a class="publication-title" href="pub.html#neurips26">SPIRIT: Speed-Driven Online Adaptation for Self-Speculative Decoding</a>
-        <p class="authors">Chenghao Liu, <em>Hui Lu</em>, Chengbo Zhan, Jia Rao</p>
+        <p class="authors">Chenghao Liu, Chengbo Zhan, <em>Hui Lu</em>, Jia Rao</p>
         <p class="venue">To appear at Conference on Neural Information Processing Systems (<strong>NeurIPS 2026</strong>)</p>
       </li>
       <li class="publication">
