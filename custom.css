@@ -55,6 +55,8 @@ ul { list-style: none; padding: 0; margin: 0; }
 .authors em { font-style: italic; }
 .venue { margin-top: 1px; font-style: italic; }
 .publication-note { margin-top: 3px; color: var(--muted); font-size: 12px; }
+.publication-award { color: #b42318; font-weight: 700; font-style: normal; white-space: nowrap; }
+.publication-award:hover, .publication-award:focus-visible { color: #8f1d14; outline-color: currentColor; }
 .full-list-link { margin-top: 24px; }
 .project-list li + li { margin-top: 8px; }
 .date { color: var(--muted); }
